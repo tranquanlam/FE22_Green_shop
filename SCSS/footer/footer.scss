@@ -1,0 +1,148 @@
+footer {
+  background-color: #313131;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  color: #898989;
+  width: 1926px;
+  .hr {
+    background: #393939;
+    height: 1px;
+    width: 1926px;
+  }
+  ul {
+    li {
+      display: inline-block;
+    }
+  }
+  .info {
+    margin-left: 388.5px;
+    display: grid;
+    grid-template-columns: 414px auto;
+    grid-template-rows: 113px;
+    &__fanPage {
+      margin-top: 33px;
+      &__p {
+        margin-bottom: 0.3rem;
+        font-weight: bold;
+      }
+    }
+    &__sMail {
+      margin-top: 33px;
+      width: 727px;
+      display: grid;
+      grid-template-columns: 241px auto;
+      grid-template-rows: 113px;
+      &__p {
+        @extend .info__fanPage__p;
+      }
+      &__form {
+        width: 488px;
+        height: 46px;
+        background: #3fb871;
+        input {
+          height: 46px;
+          width: 440px;
+          padding-top: 0px;
+        }
+        a {
+          display: inline-block;
+          height: 46px;
+          width: 45px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .elemenPage {
+    margin-left: 388.5px;
+    width: 1147px;
+    display: grid;
+    grid-template-columns: 360px auto auto auto auto;
+    grid-template-rows: auto;
+    ul {
+      li {
+        display: block;
+        a {
+          color: #898989;
+          font-size: 0.8rem;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+    }
+    &__info {
+      &__p1 {
+        font-family: "Tangerine", serif;
+        font-size: 85px;
+        margin-bottom: 0rem;
+        font-weight: 100;
+        color: #3fb871;
+      }
+      &__p3 {
+        font-size: 0.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      &__p4 {
+        font-size: 0.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      &__p5 {
+        font-size: 0.8rem;
+      }
+    }
+    &__infoCustomer {
+      &__title {
+        margin-top: 50px;
+        text-align: center;
+        color: #3fb871;
+        font-weight: bold;
+      }
+    }
+    &__subpost {
+      &__title {
+        margin-top: 50px;
+        text-align: center;
+        color: #3fb871;
+        font-weight: bold;
+      }
+    }
+    &__policy {
+      &__title {
+        margin-top: 50px;
+        text-align: center;
+        color: #3fb871;
+        font-weight: bold;
+      }
+    }
+    &__new {
+      &__title {
+        margin-top: 50px;
+        text-align: center;
+        color: #3fb871;
+        font-weight: bold;
+      }
+    }
+  }
+  .connect {
+    ul {
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+      margin-left: 388.5px;
+      width: 1147px;
+      li {
+        a {
+          color: #898989;
+          font-size: 0.8rem;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+      .connect__ul__li1{ flex-grow: 1;}
+      .connect__ul__li2{ flex-grow: 1;}
+      .connect__ul__li3{ flex-grow: 1;}
+      .connect__ul__li4{ flex-grow: 1;}
+      .connect__ul__li5{ flex-grow: 1;}
+      .connect__ul__li6{ flex-grow: 10; text-align: right;}
+    }
+  }
+}

@@ -1,0 +1,144 @@
+mixin star ()
+    .star
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        i.fa.fa-star-half.checked(aria-hidden='true') 
+mixin my-card-body (object)
+    img.card-img-top(src=object.src,alt="")
+    .card-body  
+        h5.card-title #{object.ten}
+        +star()
+        p.card-text #{object.content}
+mixin my-card-hor (object)
+    .card
+        .row
+            .col-md-4
+                img.card-img(src=object.src, alt='...')
+            .col-md-8
+                .card-body
+                    p.card-title #{object.ten}
+                    +star()
+                    p.card-text #{object.content}
+mixin my-card-info (object)
+    .card.mb-3
+        img.card-img-top(src=object.src, alt='...')
+        .card-body
+            i.card-date #{object.date}
+            p.card-ten #{object.ten}
+            p.card-detail #{object.detail}
+            a(href="")
+                i.text-cont Đọc tiếp
+    
+                   
+-const caychanchim ={ten :"Cây chân chim",content :"250.000 đ",src :"../../IMG/spx2-4.png"}
+-const caycota ={ten :"Cây cọ ta",content :"250.000 đ",src :"../../IMG/spx2-11.png"}
+-const cayduanho ={ten :"Cây dừa nhỏ",content :"250.000 đ",src :"../../IMG/spx2-6.png"}
+-const caydalam ={ten :"Cây dạ lam",content :"250.000 đ",src :"../../IMG/spx2-5.png"}
+-const caydanhdu ={ten :"Cây danh dự",content :"250.000 đ",src :"../../IMG/spx2-15.png"}
+-const caydagocnho ={ten :"Cây đa gốc nhỏ",content :"250.000 đ",src :"../../IMG/spx2-3.png"}
+-const caydabupnho ={ten :"Cây đa búp nhỏ",content :"250.000 đ",src :"../../IMG/caydabupnho.png"}
+
+
+-const info2 ={date:"Thứ 3,ngày 7,tháng 5,năm 2019",ten :"Tạo tiểu cảnh góc sân cho nhà kiểu phố, biệt thự đẹp",src :"../../IMG/11248902_984651828231999_68851709_n.png" ,detail:"Cùng Sài Gòn Hoa tìm hiểu một vài xu hướng thiết kế sấn vườn được ưa chuộng hiện nay nhé ! Kết hợp hàng rào"}
+-const info1 ={date :"Thứ 3,ngày 7,tháng 5,năm 2019",ten :"15 thiết kế tuyệt đẹp vạn người mê",src :"../../IMG/Hard-to-kill-indoor-plants.png",detail:"Khi bước từ ngoài ngõ vào hay từ trong nhà đi ra,góc sân luôn là điểm nhìn đầu tiên của chúng ta."}
+-const info3 ={date :"Thứ 3,ngày 7,tháng 5,năm 2019",ten :"Cách bố trí chậu hoa trước cửa ấn tượng",src :"../../IMG/The_Sill_84_Hester.png",detail:"Như thể hiện sự thân thiên cũng như sự hiếu khách của gia chủ,phần không gian trước cửa"}
+
+.containerHome
+    .containerHome__best
+        p.containerHome__best__p Sản phẩm nổi bật
+        hr.containerHome__best__hr
+        .containerHome__best__list
+            .containerHome__best__list__list1
+                .containerHome__best__list__list1__Cardbig
+                    .card
+                        .card__status 
+                            p.card__status__p New
+                        .card__action 
+                            p.card__status__p MUA NGAY
+                        .card__search
+                            img(src="../../IMG/icon-search-ct.png", alt="")
+                        +my-card-body(caychanchim,caychanchim.src)
+                .containerHome__best__list__list1__listCard
+                    .card
+                        +my-card-body(caycota)
+                    .card
+                        +my-card-body(cayduanho)
+            .containerHome__best__list__list2 
+                .containerHome__best__list__list2__listCard
+                    .card
+                        .card__status 
+                            p.card__status__p -50%
+                        +my-card-body(caydalam)
+                    .card
+                        .card__status 
+                            p.card__status__p New
+                        +my-card-body(caydanhdu)
+                .containerHome__best__list__list2__Cardbig
+                    .card
+                        .card__status 
+                            p.card__status__p -50%
+                        +my-card-body(caydagocnho)
+    .containerHome__titleSell
+        .title__sell
+            p.title__sell__p Sản phẩm mua nhiều
+            hr.title__sell__hr
+        .title__sale
+            p.title__sale__p Sản phẩm khuyến mãi
+            hr.title__sale__hr
+    .containerHome__sell
+        .containerHome__sell__list
+            .containerHome__sell__list__best
+                +my-card-hor(caychanchim)
+                +my-card-hor(caydalam)
+                +my-card-hor(caydanhdu)
+                +my-card-hor(caydabupnho)
+                +my-card-hor(caycota)
+                +my-card-hor(cayduanho)
+            
+            .containerHome__sell__list__sale
+                .card
+                    +my-card-body(caydanhdu)
+                .card
+                    +my-card-body(cayduanho)
+                .card
+                    +my-card-body(caycota)
+                .card
+                    +my-card-body(caydalam)
+                .card
+                    +my-card-body(cayduanho)
+                .card
+                    +my-card-body(cayduanho)
+        .containerHome__sell__advertisement
+    .containerHome__titlenew
+        .title__new
+            p.title__new__p Sản phẩm nổi bật
+            hr.title__new__hr
+    .containerHome__new
+        .card
+            +my-card-body(cayduanho)
+        .card
+            +my-card-body(cayduanho)
+        .card
+            +my-card-body(cayduanho)
+        .card
+            +my-card-body(cayduanho)
+        .card
+            +my-card-body(cayduanho)
+        .card
+            +my-card-body(cayduanho)
+        .card
+            +my-card-body(cayduanho)
+        .card
+            +my-card-body(cayduanho)
+    .containerHome__title__info
+        .title__sell
+            p.title__sell__p Sản phẩm nổi bật
+            hr.title__sell__hr
+    .containerHome__info
+        +my-card-info(info1)
+        +my-card-info(info2)
+        +my-card-info(info3)
+        
+        
