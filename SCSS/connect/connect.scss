@@ -1,0 +1,58 @@
+.lconnect {
+  background-color: #202020;
+  height: 32px;
+  width: 1920px;
+  ul {
+    width: 1147px;
+    display: flex;
+    color: #6e6e6e;
+    height: 32px;
+    margin-bottom: 0rem;
+    margin-left: 388.5px;
+    li {
+      border-color: #6e6e6e;
+      display: inline-block;
+      width: 36px;
+      img {
+        display: inline;
+      }
+      a {
+        font-size: 14px;
+        margin-top: 0.4rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #6e6e6e;
+      }
+      p {
+        font-size: 14px;
+        margin-top: 0.4rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #6e6e6e;
+        margin-bottom: 0rem;
+      }
+    }
+    .li-1 {
+      flex-grow: 8;
+    }
+    .li-2 {
+      flex-grow: 0;
+    }
+    .li-3 {
+      flex-grow: 0;
+    }
+    .li-4 {
+      flex-grow: 0;
+    }
+    .li-5 {
+      flex-grow: 0;
+    }
+    .li-6 {
+        flex-grow: 14;
+    }
+    .li-7 {
+      flex-grow: 3;
+    }
+    .li-8 {
+      flex-grow: 3;
+    }
+  }
+}

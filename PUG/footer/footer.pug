@@ -1,0 +1,69 @@
+-const arrrayFooterElenmen_new=["Tin mới","Khuyến mại","Tuyển dụng","Download","Tags"]
+-const arrrayFooterElenmen_subpost=["Hệ thống cửa hàng","Hướng dẫn mua hàng","Hướng dẫn thanh toán","tích điểm đổi quà ","Câu hỏi thường gặp"]
+-const arrrayFooterElenmen_policy=[ "Chính sách giao hàng " ,"Chính sách đổi trả sản phẩm","Chính sách bảo hành","Giới thiệu sản phẩm mới","Chính sách trả góp"]
+-const arrrayFooterElenmen_infoCustomer=["Tài khoản của tôi","Sản phẩm yêu thích","Lịch sử mua hàng"," Chính sách đổi trả"," Góp ý,khiếu nại"]
+
+-const arrayIcon=["../../IMG/icon-facebook.png","../../IMG/icon-twier.png","../../IMG/icons8-play-button-filled-24.png","../../IMG/icon-v.png"]
+
+footer
+    .info
+        .info__fanPage
+            p.info__fanPage__p KÊNH THÔNG TIN TỪ CHÚNG TÔI
+            ul
+                each n,i in arrayIcon
+                    li
+                        a(href="")
+                            img(src=n, alt="")
+        .info__sendMail
+            p.info__sendMail__p ĐĂNG KÍ EMAIL NHẬN TỪ CHÚNG TÔI
+            form.info__sendMail__form(action="")
+                input(type="text")
+                a
+                    img(src="../../IMG/icon_sendMail.png", alt="")
+    .hr
+    .elemenPage
+        .elemenPage__info
+            p.elemenPage__info__p1 Green Shop
+            p.elemenPage__info__p2 Món quà từ thiên nhiên
+            P.elemenPage__info__p3 Green shop được thành lập từ 8/2010 được sự tin tưởng của khách hàng trong suốt thời gian hoạt động đến nay cửa hàng ngày một phát triển
+            p.elemenPage__info__p4 Điện thoại : (84-4) 66.558.868
+            p.elemenPage__info__p5 Email: info@dkt.com.vn
+        .elemenPage__infoCustomer
+            p.elemenPage__infoCustomer__title Thông tin khách hàng
+            ul.elemenPage__infoCustomer__ul
+                each n,i in arrrayFooterElenmen_infoCustomer
+                    li
+                        a(href="")=n
+        .elemenPage__subpost
+            p.elemenPage__subpost__title Hỗ trợ dịch vụ
+            ul.elemenPage__subpost__ul
+                each n,i in arrrayFooterElenmen_subpost 
+                    li
+                        a(href="")=n
+        .elemenPage__policy
+            p.elemenPage__policy__title Chính sách ưu đãi
+            ul.elemenPage__policy__ul
+                each n,i in arrrayFooterElenmen_policy
+                    li
+                        a(href="")=n
+        .elemenPage__new
+            p.elemenPage__new__title Tin tức
+            ul.elemenPage__new__ul
+                each n,i in arrrayFooterElenmen_new
+                    li
+                        a(href="")=n
+    .hr
+    .connect
+        ul.connect__ul
+            li.connect__ul__li1
+                a(href="") Sitemap
+            li.connect__ul__li2
+                a(href="") Danh muc sản phẩm
+            li.connect__ul__li3
+                a(href="") Hợp tác
+            li.connect__ul__li4
+                a(href="") Thông tin liên hệ
+            li.connect__ul__li5
+                a(href="") Câu hỏi thường gặp
+            li.connect__ul__li6
+                img(src="../../IMG/footer-card.png", alt="")

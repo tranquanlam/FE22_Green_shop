@@ -1,0 +1,33 @@
+mixin star ()
+    .star
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        i.fa.fa-star-half.checked(aria-hidden='true') 
+mixin my-card-body (object)
+    img.card-img-top(src=object.src,alt="")
+    .card-body  
+        h5.card-title #{object.ten}
+        +star()
+        p.card-text #{object.content}
+mixin my-card-hor (object)
+    .card
+        .row
+            .col-4
+                img.card-img(src=object.src, alt='...')
+            .col-8
+                .card-body
+                    p.card-title #{object.ten}
+                    +star()
+                    p.card-text #{object.content}
+mixin my-card-info (object)
+    .card.mb-3
+        img.card-img-top(src=object.src, alt='...')
+        .card-body
+            i.card-date #{object.date}
+            p.card-ten #{object.ten}
+            p.card-detail #{object.detail}
+            a(href="")
+                i.text-cont Đọc tiếp
+    
