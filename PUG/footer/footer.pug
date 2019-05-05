@@ -1,3 +1,7 @@
+-const arrrayFooterElenmen_new=["Tin mới","Khuyến mại","Tuyển dụng","Download","Tags"]
+-const arrrayFooterElenmen_subpost=["Hệ thống cửa hàng","Hướng dẫn mua hàng","Hướng dẫn thanh toán","tích điểm đổi quà ","Câu hỏi thường gặp"]
+-const arrrayFooterElenmen_policy=[ "Chính sách giao hàng " ,"Chính sách đổi trả sản phẩm","Chính sách bảo hành","Giới thiệu sản phẩm mới","Chính sách trả góp"]
+-const arrrayFooterElenmen_infoCustomer=["Tài khoản của tôi","Sản phẩm yêu thích","Lịch sử mua hàng"," Chính sách đổi trả"," Góp ý,khiếu nại"]
 footer
     .info
         .info__fanPage
@@ -32,55 +36,27 @@ footer
         .elemenPage__infoCustomer
             p.elemenPage__infoCustomer__title Thông tin khách hàng
             ul.elemenPage__infoCustomer__ul
-                li
-                    a(href="") Tài khoản của tôi
-                li
-                    a(href="") Sản phẩm yêu thích
-                li
-                    a(href="") Lịch sử mua hàng
-                li
-                    a(href="")  Chính sách đổi trả
-                li
-                    a(href="")  Góp ý,khiếu nại
+                each n,i in arrrayFooterElenmen_infoCustomer
+                    li
+                        a(href="")=n
         .elemenPage__subpost
             p.elemenPage__subpost__title Hỗ trợ dịch vụ
             ul.elemenPage__subpost__ul
-                li
-                    a(href="") Hệ thống cửa hàng
-                li
-                    a(href="") Hướng dẫn mua hàng
-                li
-                    a(href="") Hướng dẫn thanh toán
-                li
-                    a(href="") tích điểm đổi quà 
-                li
-                    a(href="") Câu hỏi thường gặp
+                each n,i in arrrayFooterElenmen_subpost 
+                    li
+                        a(href="")=n
         .elemenPage__policy
             p.elemenPage__policy__title Chính sách ưu đãi
             ul.elemenPage__policy__ul
-                li
-                    a(href="") Chính sách giao hàng
-                li
-                    a(href="")  Chính sách đổi trả sản phẩm
-                li
-                    a(href="") Chính sách bảo hành
-                li
-                    a(href="") Giói thiệu sản phẩm mới
-                li
-                    a(href="") Chính sách trả góp
+                each n,i in arrrayFooterElenmen_policy
+                    li
+                        a(href="")=n
         .elemenPage__new
             p.elemenPage__new__title Tin tức
             ul.elemenPage__new__ul
+                each n,i in arrrayFooterElenmen_new
                     li
-                        a(href="") Tin mới
-                    li
-                        a(href="") Khuyến mại
-                    li
-                        a(href="") Tuyển dụng
-                    li
-                        a(href="") Download
-                    li
-                        a(href="") Tags
+                        a(href="")=n
     .hr
     .connect
         ul.connect__ul
