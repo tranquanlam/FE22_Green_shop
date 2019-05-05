@@ -59,7 +59,6 @@
           }
         }
       }
-
       &__list1 {
         background-color: white;
         &__listCard {
@@ -78,57 +77,6 @@
       }
     }
   }
-  .title__new__p{
-    @extend .containerHome__best__p;
-  }
-  .title__new__hr{
-    @extend .containerHome__best__hr;
-  }
-  .title__sell__p{
-    @extend .containerHome__best__p;
-  }
-  .title__sell__hr{
-    
-    @extend .containerHome__best__hr;
-  }
-  &__sell {
-    display: grid;
-    width: 100%;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-gap: 32px;
-    &__list {
-      display: grid;
-      width: 100%;
-      grid-template-columns: 262px 849px;
-      grid-template-rows: auto;
-      grid-gap: 32px;
-      &__best {
-        display: grid;
-        width: 100%;
-        grid-template-columns: auto;
-        grid-template-rows: repeat(1, 1fr);
-        img {
-          width: 77px;
-          height: 77px;
-          margin: 20px;
-        }
-      }
-      &__sale {
-        display: grid;
-        width: 100%;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto;
-        grid-gap: 32px;
-      }
-    }
-    &__advertisement {
-      height: 300px;
-      width: 100%;
-      background: url(../../IMG/banner-11140x217.png);
-      background-repeat: no-repeat;
-    }
-  }
   &__titleSell {
     @extend .containerHome__sell__list;
     margin-top: 20px;
@@ -145,30 +93,64 @@
       @extend .containerHome__best__hr;
     }
   }
+  &__sell {
+    width: 100%;
+    @include grid_ContainerHome__best(grid, auto, auto auto, 32px);
+    &__list {
+      width: 100%;
+      @include grid_ContainerHome__best(grid, 262px 849px, auto, 32px);
+      &__best {
+        width: 100%;
+        @include grid_ContainerHome__best(grid,auto, repeat(1, 1fr), 0px);
+        img {
+          width: 77px;
+          height: 77px;
+          margin: 20px;
+        }
+      }
+      &__sale {
+        width: 100%;
+        @include grid_ContainerHome__best(grid,repeat(3, 1fr),auto auto , 32px);
+      }
+    }
+    &__advertisement {
+      height: 300px;
+      width: 100%;
+      background: url(../../IMG/banner-11140x217.png);
+      background-repeat: no-repeat;
+    }
+  }
+  .title__new__p {
+    @extend .containerHome__best__p;
+  }
+  .title__new__hr {
+    @extend .containerHome__best__hr;
+  }
   &__new {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto;
     grid-gap: 32px;
   }
-  .title__info__hr{
+  .title__info__hr {
     @extend .containerHome__best__hr;
     width: 1147px;
-    
   }
-  
+  .title__info__p{
+    @extend .containerHome__best__p;
+  }
   &__info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-gap: 32px;
-    
-    .card{
+
+    .card {
       border: none;
     }
     .card-body {
       padding: 0px;
-    }      
+    }
     .card-date {
       color: #918e8e;
       font-family: Arial, Helvetica, sans-serif;
@@ -190,6 +172,57 @@
       color: #3fb871;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 12px;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .containerHome {
+    width: 320px;
+    margin-left: 0px;
+    
+    &__best {
+      &__list {
+        @include grid_ContainerHome__best(grid, auto, repeat(1, 1fr), 21px);
+      }
+    }  
+    &__sell {
+      &__list{
+        @include grid_ContainerHome__best(grid, auto,auto auto, 21px);
+        margin-left: 33px;
+        margin-right: 33px;
+        &__best {
+          width: 100%;
+          @include grid_ContainerHome__best(grid,auto, repeat(1, 1fr), 0px);
+          img {
+            width: 77px;
+            height: 77px;
+            margin: 20px;
+          }
+        }
+        &__sale {
+          width: 100%;
+          @include grid_ContainerHome__best(grid,repeat(1, 1fr),auto , 21px);
+        }
+      }
+      &__advertisement {
+        background:url(../../IMG/12-Mobile_03.png);
+        background-repeat: no-repeat;
+        width: 289px;
+        margin-left: 10px;
+        height: 80px;
+      }
+    }
+    &__new {
+      @include grid_ContainerHome__best(grid,repeat(1, 1fr),auto , 21px);
+    }
+    &__titleSell{
+      @include grid_ContainerHome__best(grid, auto, repeat(1, 1fr), 0px);
+      .title__sale{
+        display: none;
+      }
+    }
+    &__info {
+      display: none;
     }
   }
 }

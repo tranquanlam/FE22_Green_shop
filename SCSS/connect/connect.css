@@ -87,4 +87,10 @@
       -ms-flex-positive: 3;
           flex-grow: 3;
 }
+
+@media only screen and (max-width: 480px) {
+  .lconnect {
+    display: none;
+  }
+}
 /*# sourceMappingURL=connect.css.map */

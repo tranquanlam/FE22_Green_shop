@@ -8,7 +8,7 @@
   color: yellow;
 }
 
-.containerHome__best__p, .containerHome .title__new__p, .containerHome .title__sell__p, .containerHome__titleSell .title__sell__p, .containerHome__titleSell .title__sale__p {
+.containerHome__best__p, .containerHome__titleSell .title__sell__p, .containerHome__titleSell .title__sale__p, .containerHome .title__new__p, .containerHome .title__info__p {
   display: inline-block;
   color: #54c081;
   font-weight: bold;
@@ -17,7 +17,7 @@
   margin-bottom: 0rem;
 }
 
-.containerHome__best__hr, .containerHome .title__new__hr, .containerHome .title__sell__hr, .containerHome__titleSell .title__sell__hr, .containerHome__titleSell .title__sale__hr, .containerHome .title__info__hr {
+.containerHome__best__hr, .containerHome__titleSell .title__sell__hr, .containerHome__titleSell .title__sale__hr, .containerHome .title__new__hr, .containerHome .title__info__hr {
   margin-top: 0rem;
   margin-bottom: 40px;
 }
@@ -115,10 +115,14 @@
   margin-top: 32px;
 }
 
+.containerHome__titleSell {
+  margin-top: 20px;
+}
+
 .containerHome__sell {
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  width: 100%;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: auto auto;
@@ -127,9 +131,9 @@
 }
 
 .containerHome__sell__list, .containerHome__titleSell {
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  width: 100%;
   -ms-grid-columns: 262px 849px;
       grid-template-columns: 262px 849px;
   -ms-grid-rows: auto;
@@ -138,13 +142,14 @@
 }
 
 .containerHome__sell__list__best {
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  width: 100%;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
+  grid-gap: 0px;
 }
 
 .containerHome__sell__list__best img {
@@ -154,9 +159,9 @@
 }
 
 .containerHome__sell__list__sale {
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  width: 100%;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: auto auto;
@@ -169,10 +174,6 @@
   width: 100%;
   background: url(../../IMG/banner-11140x217.png);
   background-repeat: no-repeat;
-}
-
-.containerHome__titleSell {
-  margin-top: 20px;
 }
 
 .containerHome__new {
@@ -231,5 +232,88 @@
   color: #3fb871;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 480px) {
+  .containerHome {
+    width: 320px;
+    margin-left: 0px;
+  }
+  .containerHome__best__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+    grid-gap: 21px;
+  }
+  .containerHome__sell__list, .containerHome__titleSell {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    grid-gap: 21px;
+    margin-left: 33px;
+    margin-right: 33px;
+  }
+  .containerHome__sell__list__best {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+    grid-gap: 0px;
+  }
+  .containerHome__sell__list__best img {
+    width: 77px;
+    height: 77px;
+    margin: 20px;
+  }
+  .containerHome__sell__list__sale {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 21px;
+  }
+  .containerHome__sell__advertisement {
+    background: url(../../IMG/12-Mobile_03.png);
+    background-repeat: no-repeat;
+    width: 289px;
+    margin-left: 10px;
+    height: 80px;
+  }
+  .containerHome__new {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 21px;
+  }
+  .containerHome__titleSell {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+    grid-gap: 0px;
+  }
+  .containerHome__titleSell .title__sale {
+    display: none;
+  }
+  .containerHome__info {
+    display: none;
+  }
 }
 /*# sourceMappingURL=home.css.map */
