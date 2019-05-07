@@ -1,0 +1,146 @@
+mixin star ()
+    .star
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        i.fa.fa-star-half.checked(aria-hidden='true') 
+mixin my-card-hor (object)
+    .card
+        .row
+            .col-4
+                img.card-img(src=object.src, alt='...')
+            .col-8
+                .card-body
+                    p.card-title #{object.ten}
+                    p.card-text #{object.mota}
+                    +star()
+                    p.card-price #{object.price}
+                    .card-body__action
+                        .card-body__action__buy
+                            a(href="") MUA NGAY
+                        .card-body__action__seach
+                            a(href="")
+                                img(src="../../IMG/icon-search-ct.png", alt="")
+                        .card-body__action__love
+                            a(href="")
+                                img(src="../../IMG/heart.png", alt="")
+-const caychanchim ={ten :"Cây chân chim",mota:"Cây ngọc ngân là loại cây cho tình yêu! Đây là món quà bất ngờ để bạn tặng \"người ấy\".Ngọc ngân (Valentien) không chỉ đẹp ở phiến lá xanh đốm trắng",price :"250.000 đ",src :"../../IMG/spx2-4.png"}
+-const caycota ={ten :"Cây cọ ta",mota:"Cây ngọc ngân là loại cây cho tình yêu! Đây là món quà bất ngờ để bạn tặng &quot; người ấy & quot;.Ngọc ngân (Valentien) không chỉ đẹp ở phiến lá xanh đốm trắng",price :"250.000 đ",src :"../../IMG/spx2-11.png"}
+-const cayduanho ={ten :"Cây dừa nhỏ",mota:"Cây ngọc ngân là loại cây cho tình yêu! Đây là món quà bất ngờ để bạn tặng &quot; người ấy & quot;.Ngọc ngân (Valentien) không chỉ đẹp ở phiến lá xanh đốm trắng",price :"250.000 đ",src :"../../IMG/spx2-6.png"}
+-const caydalam ={ten :"Cây dạ lam",mota:"Cây ngọc ngân là loại cây cho tình yêu! Đây là món quà bất ngờ để bạn tặng &quot; người ấy & quot;.Ngọc ngân (Valentien) không chỉ đẹp ở phiến lá xanh đốm trắng",price :"250.000 đ",src :"../../IMG/spx2-5.png"}
+-const caydanhdu ={ten :"Cây danh dự",mota:"Cây ngọc ngân là loại cây cho tình yêu! Đây là món quà bất ngờ để bạn tặng &quot; người ấy & quot;.Ngọc ngân (Valentien) không chỉ đẹp ở phiến lá xanh đốm trắng",price :"250.000 đ",src :"../../IMG/spx2-15.png"}
+-const caydagocnho ={ten :"Cây đa gốc nhỏ",mota:"Cây ngọc ngân là loại cây cho tình yêu! Đây là món quà bất ngờ để bạn tặng &quot; người ấy & quot;.Ngọc ngân (Valentien) không chỉ đẹp ở phiến lá xanh đốm trắng",price :"250.000 đ",src :"../../IMG/spx2-3.png"}
+-const caydabupnho ={ten :"Cây đa búp nhỏ",mota:"Cây ngọc ngân là loại cây cho tình yêu! Đây là món quà bất ngờ để bạn tặng &quot; người ấy & quot;.Ngọc ngân (Valentien) không chỉ đẹp ở phiến lá xanh đốm trắng",price :"250.000 đ",src :"../../IMG/caydabupnho.png"}
+
+-const Xanhcay={name:" Xanh cây",img:"../../IMG/Ellipse1.png"}
+-const Tim={name:" Tím",img:"../../IMG/Ellipse2.png"}
+-const Vang={name:" Vàng",img:"../../IMG/Ellipse3.png"}
+-const Do={name:" Đỏ cam",img:"../../IMG/Ellipse4.png"}
+-const Xanhtroi={name:" Xanh trời",img:"../../IMG/Ellipse5.png"}
+-const Hong={name:" Hồng",img:"../../IMG/Ellipse6.png"}
+
+
+-const arrayCay=[caychanchim,caydalam,caydanhdu,caydabupnho,caycota,cayduanho]
+-const arrayColor1=[Xanhcay,Tim,Vang]
+-const arrayColor2=[Do,Xanhtroi,Hong]
+-const arrayContent=["Cây chậu treo (10)","Cây cỏ hoa (3)","Cây dây leo (3)","Cây để bàn","Cây may mắn","Cây trang trí","Cây nội thất"]
+-const arrayContent=["&gt; 200.000 Đ - 400.000 Đ","&gt; 400.000 Đ - 600.000 Đ","&gt; 600.000 Đ - 800.000 Đ","&gt; 800.000 Đ - 1.000.000 Đ"]
+.contentMainlist
+    .addressLocal
+        a.addressLocal__a(href="") Home
+        a.addressLocal__a1(href="") /Danh sách sản phẩm
+    .content
+        .content__classify
+            .content__classify__listProduct
+                .content__classify__listProduct__title
+                    p.content__classify__listProduct__title__p Danh mục sản phẩm
+                    hr.content__classify__listProduct__title__hr
+                .content__classify__listProduct__content
+                    ul
+                        each n,i in arrayContent
+                            li
+                                a(href="")=">"+n
+                                hr
+            .content__classify__searchPrice
+                .content__classify__searchPrice__title
+                    p.content__classify__searchPrice__title__p Tìm theo giá
+                    hr.content__classify__searchPrice__title__hr
+                .content__classify__searchPrice__content
+                    ul
+                        each n,i in arrayContent
+                            li
+                                a(href="")=n
+                                hr
+            .content__classify__searchColor
+                .content__classify__searchColor__title
+                    p.content__classify__searchColor__title__p Tìm theo màu
+                    hr.content__classify__searchColor__title__hr
+                .content__classify__searchColor__content
+                    .list1
+                        ul
+                            each n,i in arrayColor1
+                                li
+                                    a(href="")
+                                        img(src=n.img, alt="")
+                                        | #{n.name}
+                    .list2
+                        ul
+                            each n,i in arrayColor2
+                                li
+                                    a(href="")
+                                        img(src=n.img, alt="")
+                                        | #{n.name}
+        .content__listProduct
+            img.firstImg(src="../../IMG/The_Sill_84_Hester2.png", alt="")
+            .content__listProduct__control
+                a.listGrid(href="")
+                    img(src="../../IMG/listGrid.png", alt="")
+                a.listRow(href="")
+                    img(src="../../IMG/list.png", alt="")
+                .content__listProduct__control__SortName
+                    p Sắp xếp theo tên
+                    .btn-group
+                        button.btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                            | Tên sản phẩm 
+                            span.caret  
+                        ul.dropdown-menu
+                            li
+                            a(href='#') test 1
+                            li
+                            a(href='#') test 2
+                            li
+                            a(href='#') test 3
+                .content__listProduct__control__numberElement
+                    p Show
+                    .btn-group
+                        button.btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                            | 15 
+                            span.caret  
+                        ul.dropdown-menu
+                            li
+                            a(href='#') test 1
+                            li
+                            a(href='#') test 2
+                            li
+                            a(href='#') test 3
+            .content__listProduct__display
+                each n,i in arrayCay
+                    +my-card-hor(n)
+                .content__listProduct__display__numberPage
+                    ul
+                        li.li1
+                            a(href="") Trang trước
+                        li.li2
+                            a(href="") 1
+                        li.li2
+                            a(href="") 2
+                        li.li3
+                            a(href="") 3
+                        li.li4
+                            a(href="") 4
+                        li.li5
+                            a(href="") Trang cuối
+
+                                
+                                
