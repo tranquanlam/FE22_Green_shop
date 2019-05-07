@@ -15,7 +15,7 @@
   left: $left;
 }
 
-.containerHome {
+.container-home {
   margin-left: 388.5px;
   width: 1145px;
   margin-top: 58px;
@@ -78,19 +78,19 @@
     }
   }
   &__titleSell {
-    @extend .containerHome__sell__list;
+    @extend .container-home__sell__list;
     margin-top: 20px;
     .title__sell__p {
-      @extend .containerHome__best__p;
+      @extend .container-home__best__p;
     }
     .title__sell__hr {
-      @extend .containerHome__best__hr;
+      @extend .container-home__best__hr;
     }
     .title__sale__p {
-      @extend .containerHome__best__p;
+      @extend .container-home__best__p;
     }
     .title__sale__hr {
-      @extend .containerHome__best__hr;
+      @extend .container-home__best__hr;
     }
   }
   &__sell {
@@ -121,10 +121,10 @@
     }
   }
   .title__new__p {
-    @extend .containerHome__best__p;
+    @extend .container-home__best__p;
   }
   .title__new__hr {
-    @extend .containerHome__best__hr;
+    @extend .container-home__best__hr;
   }
   &__new {
     display: grid;
@@ -133,11 +133,11 @@
     grid-gap: 32px;
   }
   .title__info__hr {
-    @extend .containerHome__best__hr;
+    @extend .container-home__best__hr;
     width: 1147px;
   }
   .title__info__p{
-    @extend .containerHome__best__p;
+    @extend .container-home__best__p;
   }
   &__info {
     display: grid;
@@ -158,7 +158,7 @@
       margin-top: 10px;
       margin-bottom: 10px;
     }
-    .card-ten {
+    .card-name {
       color: #3fb871;
       font-weight: bold;
       font-size: 14px;
@@ -176,7 +176,7 @@
   }
 }
 @media only screen and (max-width: 480px) {
-  .containerHome {
+  .container-home {
     width: 320px;
     margin-left: 0px;
     
