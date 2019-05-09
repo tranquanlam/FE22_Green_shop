@@ -1,4 +1,4 @@
-include ..\DATA\DTlistProduct
+include ..\DATA\DTlistProduct2
 include ..\DATA\MXhome
 .contentMainlist
     .addressLocal
@@ -45,14 +45,14 @@ include ..\DATA\MXhome
                                     a(href="")
                                         img(src=n.img, alt="")
                                         | #{n.name}
-        .content__listProduct
+        .content__listProduct2
             img.firstImg(src="../../IMG/The_Sill_84_Hester2.png", alt="")
-            .content__listProduct__control
+            .content__listProduct2__control
                 a.listGrid(href="file:///E:/2018-2019-nam3/HK%20II/FrontendSun/FE22_Green_shop/INDEX/Home/homeGrid2.html")
                     img(src="../../IMG/listGrid.png", alt="")
                 a.listRow(href="file:///E:/2018-2019-nam3/HK%20II/FrontendSun/FE22_Green_shop/INDEX/Home/homeGrid1.html")
                     img(src="../../IMG/list.png", alt="")
-                .content__listProduct__control__SortName
+                .content__listProduct2__control__SortName
                     p Sắp xếp theo tên
                     .btn-group
                         button.btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
@@ -65,7 +65,7 @@ include ..\DATA\MXhome
                             a(href='#') test 2
                             li
                             a(href='#') test 3
-                .content__listProduct__control__numberElement
+                .content__listProduct2__control__numberElement
                     p Show
                     .btn-group
                         button.btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
@@ -78,20 +78,21 @@ include ..\DATA\MXhome
                             a(href='#') test 2
                             li
                             a(href='#') test 3
-            .content__listProduct__display
-                each n,i in arrayCay
-                    +my-card-hor-list-Product(n)
-                .content__listProduct__display__numberPage
-                    ul
-                        li.li1
-                            a(href="") Trang trước
-                        li.li2
-                            a(href="") 1
-                        li.li2
-                            a(href="") 2
-                        li.li3
-                            a(href="") 3
-                        li.li4
-                            a(href="") 4
-                        li.li5
-                            a(href="") Trang cuối                               
+            .content__listProduct2__display
+                each n,i in arrayCay2
+                    .card
+                        +my-card-body(n)
+            .content__listProduct2__numberPage
+                ul
+                    li.li1
+                        a(href="") Trang trước
+                    li.li2
+                        a(href="") 1
+                    li.li2
+                        a(href="") 2
+                    li.li3
+                        a(href="") 3
+                    li.li4
+                        a(href="") 4
+                    li.li5
+                        a(href="") Trang cuối                               

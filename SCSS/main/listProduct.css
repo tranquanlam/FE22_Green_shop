@@ -97,11 +97,11 @@
   margin-top: 20px;
 }
 
-.contentMainlist .content__listProduct .checked {
+.contentMainlist .content__listProduct .checked, .contentMainlist .content__listProduct2 .checked {
   color: yellow;
 }
 
-.contentMainlist .content__listProduct__control {
+.contentMainlist .content__listProduct__control, .contentMainlist .content__listProduct2__control {
   margin-top: 10px;
   margin-bottom: 10px;
   display: -ms-grid;
@@ -113,26 +113,26 @@
   grid-gap: 0px;
 }
 
-.contentMainlist .content__listProduct__control img {
+.contentMainlist .content__listProduct__control img, .contentMainlist .content__listProduct2__control img {
   padding-top: 16px;
 }
 
-.contentMainlist .content__listProduct__control p {
+.contentMainlist .content__listProduct__control p, .contentMainlist .content__listProduct2__control p {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 15px;
   margin-right: 15px;
 }
 
-.contentMainlist .content__listProduct__control__SortName, .contentMainlist .content__listProduct__control__numberElement {
+.contentMainlist .content__listProduct__control__SortName, .contentMainlist .content__listProduct__control__numberElement, .contentMainlist .content__listProduct2__control__SortName, .contentMainlist .content__listProduct2__control__numberElement {
   text-align: right;
 }
 
-.contentMainlist .content__listProduct__control__SortName .btn-group, .contentMainlist .content__listProduct__control__numberElement .btn-group {
+.contentMainlist .content__listProduct__control__SortName .btn-group, .contentMainlist .content__listProduct__control__numberElement .btn-group, .contentMainlist .content__listProduct2__control__SortName .btn-group, .contentMainlist .content__listProduct2__control__numberElement .btn-group {
   border: 1px solid #918e8e;
 }
 
-.contentMainlist .content__listProduct__control__SortName .btn-group .btn, .contentMainlist .content__listProduct__control__numberElement .btn-group .btn {
+.contentMainlist .content__listProduct__control__SortName .btn-group .btn, .contentMainlist .content__listProduct__control__numberElement .btn-group .btn, .contentMainlist .content__listProduct2__control__SortName .btn-group .btn, .contentMainlist .content__listProduct2__control__numberElement .btn-group .btn {
   color: #918e8e;
 }
 
@@ -246,6 +246,69 @@
 }
 
 .contentMainlist .content__listProduct__display__numberPage ul .li5 {
+  width: 105px;
+}
+
+.contentMainlist .content__listProduct2__control img {
+  padding-top: 16px;
+}
+
+.contentMainlist .content__listProduct2__control p {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.contentMainlist .content__listProduct2__display {
+  margin-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.contentMainlist .content__listProduct2__numberPage {
+  margin-top: 50px;
+  text-align: right;
+}
+
+.contentMainlist .content__listProduct2__numberPage ul {
+  padding-left: 408px;
+  text-align: left;
+  list-style: none;
+}
+
+.contentMainlist .content__listProduct2__numberPage ul li {
+  display: inline-block;
+  margin-right: 5px;
+  border: 1px solid #818181;
+  height: 45px;
+  width: 44px;
+}
+
+.contentMainlist .content__listProduct2__numberPage ul li a {
+  display: inline-block;
+  margin-top: 7px;
+  margin-left: 15px;
+}
+
+.contentMainlist .content__listProduct2__numberPage ul li:hover {
+  background: #3fb871;
+}
+
+.contentMainlist .content__listProduct2__numberPage ul li:hover a {
+  color: white;
+}
+
+.contentMainlist .content__listProduct2__numberPage ul .li1 {
+  width: 105px;
+}
+
+.contentMainlist .content__listProduct2__numberPage ul .li5 {
   width: 105px;
 }
 /*# sourceMappingURL=listProduct.css.map */
