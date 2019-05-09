@@ -1,19 +1,10 @@
--const li1 ={class :"li-1",content :"Open time 8:00-18:00 Monday-Sunday",src :"",links:"#"}
--const li2 ={class :"li-2",content :"",src :"../../IMG/icon-facebook.png",links:"#"}
--const li3 ={class :"li-3",content :"",src :"../../IMG/icon-twier.png",links:"#"}
--const li4 ={class :"li-4",content :"",src :"../../IMG/icon-t.png",links:"#"}
--const li5 ={class :"li-5",content :"",src :"../../IMG/icon-v.png",links:"#"}
--const li6 ={class :"li-6",content :"",src :"",links:"#"}
--const li7 ={class :"li-7",content :"Đăng nhập",src :"../../IMG/icon-DangNhap.png",links:"#"}
--const li8 ={class :"li-8",content :"Đăng ký",src :"../../IMG/icon-dangky.png",links:"#"}
-
+include ..\DATA\DTconnect
 -const array2to8 = [li2,li3,li4,li5,li6,li7,li8]
 .lconnect
     ul
-        li.li-1
+        li.element-1
             p Open time 8:00-18:00 Monday-Sunday
         each n,i in array2to8
             li(class=n.class)
                 a(href="") #{n.content}
                     img(src=n.src, alt="")
-        

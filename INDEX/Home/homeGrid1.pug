@@ -5,9 +5,9 @@ html
         meta(charset="utf-8")
         meta( name="viewport" content="width=device-width, initial-scale=1")
         link(rel="stylesheet", href="../../SCSS/header/headerBackgroud/headerBackgroud.css")
+        link(rel="stylesheet", href="../../SCSS/header/nav/nav.css")
         link(rel="stylesheet", href="../../SCSS/connect/connect.css")
-        link(rel="stylesheet", href="../../SCSS/main/home.css")
-        link(rel="stylesheet", href="../../SCSS/Popup/popup_email.css")
+        link(rel="stylesheet", href="../../SCSS/main/listProduct.css")
         link(rel="stylesheet", href="../../SCSS/footer/footer.css")    
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
         link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
@@ -16,14 +16,30 @@ html
         link(rel="stylesheet", href="../../../SCSS/header/headerBackgroud/headerBackgroud.css")
         link(href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet")
         link(href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet")
-      
     body
-        include ..\..\PUG\Popup\popup_email
         include ..\..\PUG\connect\connect
-        include ..\..\PUG\header\headerBackgroud\header
-        include ..\..\PUG\main\home
+        header 
+            .action
+                ul.action__ul
+                    li.li-1  
+                        p.li-p1 Green Shop
+                        p.li-p2 Món quà từ thiên nhiên
+                    li.li-2
+                        .divImg
+                            img.img1(src="../../IMG/hoa-panner1.png", alt="")
+                            img.img2(src="../../IMG/hoa-panner2.png", alt="")
+                    li.li-3
+                        p Hỗ trợ : (04) 6674 2332 - (04) 3786 8904
+                        .search
+                            form(action="", method="get")
+                                input.text
+                                img(src="../../IMG/icon-search.png", alt="")
+                    li.li-4                    
+                        p.li-4-p  0 Sản phẩm &nbsp;&nbsp;&nbsp;&nbsp;
+                            img(src="../../IMG/icon-Gio-Hang.png", alt="")
+            include ..\..\PUG\header\nav\nav
+        include ..\..\PUG\main\listProduct
         include ..\..\PUG\footer\footer
         script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
         script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
-        script(src='../../PUG/JS/popup.js')

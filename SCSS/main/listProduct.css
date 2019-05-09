@@ -1,0 +1,251 @@
+.contentMainlist {
+  margin-left: 300px;
+  width: 1141px;
+}
+
+.contentMainlist .addressLocal {
+  margin-top: 19px;
+  height: 63px;
+}
+
+.contentMainlist .addressLocal .addressLocal__a {
+  color: #818181;
+}
+
+.contentMainlist .addressLocal .addressLocal__a1 {
+  color: #3fb871;
+}
+
+.contentMainlist .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 293px auto;
+      grid-template-columns: 293px auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 32px;
+}
+
+.contentMainlist .content__classify a {
+  color: #818181;
+}
+
+.contentMainlist .content__classify ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.contentMainlist .content__classify__listProduct__title__p {
+  display: inline-block;
+  color: #54c081;
+  font-weight: bold;
+  height: 44px;
+  border-bottom: 3px solid #54c081;
+  margin-bottom: 0rem;
+}
+
+.contentMainlist .content__classify__listProduct__title__hr {
+  margin-top: 0rem;
+  margin-bottom: 10px;
+}
+
+.contentMainlist .content__classify__searchPrice__title__p {
+  margin-top: 1px;
+  display: inline-block;
+  color: #54c081;
+  font-weight: bold;
+  height: 44px;
+  border-bottom: 3px solid #54c081;
+  margin-bottom: 0rem;
+}
+
+.contentMainlist .content__classify__searchPrice__title__hr {
+  margin-top: 0rem;
+  margin-bottom: 10px;
+}
+
+.contentMainlist .content__classify__searchColor__title__p {
+  display: inline-block;
+  color: #54c081;
+  font-weight: bold;
+  height: 44px;
+  border-bottom: 3px solid #54c081;
+  margin-bottom: 0rem;
+}
+
+.contentMainlist .content__classify__searchColor__title__hr {
+  margin-top: 0rem;
+  margin-bottom: 10px;
+}
+
+.contentMainlist .content__classify__searchColor__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 32px;
+}
+
+.contentMainlist .content__classify__searchColor__content ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.contentMainlist .content__classify__searchColor__content ul li {
+  margin-top: 20px;
+}
+
+.contentMainlist .content__listProduct .checked {
+  color: yellow;
+}
+
+.contentMainlist .content__listProduct__control {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33px 33px 629px auto;
+      grid-template-columns: 33px 33px 629px auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 0px;
+}
+
+.contentMainlist .content__listProduct__control img {
+  padding-top: 16px;
+}
+
+.contentMainlist .content__listProduct__control p {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.contentMainlist .content__listProduct__control__SortName, .contentMainlist .content__listProduct__control__numberElement {
+  text-align: right;
+}
+
+.contentMainlist .content__listProduct__control__SortName .btn-group, .contentMainlist .content__listProduct__control__numberElement .btn-group {
+  border: 1px solid #918e8e;
+}
+
+.contentMainlist .content__listProduct__control__SortName .btn-group .btn, .contentMainlist .content__listProduct__control__numberElement .btn-group .btn {
+  color: #918e8e;
+}
+
+.contentMainlist .content__listProduct__display {
+  margin-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+.contentMainlist .content__listProduct__display .card-title {
+  color: #6b6969;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contentMainlist .content__listProduct__display p.card-text {
+  color: #918e8e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.contentMainlist .content__listProduct__display .card {
+  border: none;
+}
+
+.contentMainlist .content__listProduct__display .card .card-body .card-price {
+  color: #b91e1e;
+}
+
+.contentMainlist .content__listProduct__display .card .card-body__action {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 146px 44px 44px;
+      grid-template-columns: 146px 44px 44px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.contentMainlist .content__listProduct__display .card .card-body__action__buy {
+  background-color: #3fb871;
+  color: white;
+  border-radius: 50px;
+  width: 146px;
+  height: 44px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.contentMainlist .content__listProduct__display .card .card-body__action__buy a {
+  color: white;
+}
+
+.contentMainlist .content__listProduct__display .card .card-body__action__seach, .contentMainlist .content__listProduct__display .card .card-body__action__love {
+  height: 44px;
+  width: 44px;
+  border-radius: 50px;
+  border: 1px solid;
+  border-color: #6b6969;
+  text-align: center;
+}
+
+.contentMainlist .content__listProduct__display .card .card-body__action__seach img, .contentMainlist .content__listProduct__display .card .card-body__action__love img {
+  padding-top: 13px;
+}
+
+.contentMainlist .content__listProduct__display .card .card-body__action__love img {
+  padding-top: 13px;
+}
+
+.contentMainlist .content__listProduct__display__numberPage {
+  margin-top: 50px;
+  text-align: right;
+}
+
+.contentMainlist .content__listProduct__display__numberPage ul {
+  padding-left: 408px;
+  text-align: left;
+  list-style: none;
+}
+
+.contentMainlist .content__listProduct__display__numberPage ul li {
+  display: inline-block;
+  margin-right: 5px;
+  border: 1px solid #818181;
+  height: 45px;
+  width: 44px;
+}
+
+.contentMainlist .content__listProduct__display__numberPage ul li a {
+  display: inline-block;
+  margin-top: 7px;
+  margin-left: 15px;
+}
+
+.contentMainlist .content__listProduct__display__numberPage ul li:hover {
+  background: #3fb871;
+}
+
+.contentMainlist .content__listProduct__display__numberPage ul li:hover a {
+  color: white;
+}
+
+.contentMainlist .content__listProduct__display__numberPage ul .li1 {
+  width: 105px;
+}
+
+.contentMainlist .content__listProduct__display__numberPage ul .li5 {
+  width: 105px;
+}
+/*# sourceMappingURL=listProduct.css.map */

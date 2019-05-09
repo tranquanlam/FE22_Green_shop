@@ -1,0 +1,19 @@
+.modal.fade#myModal(role='dialog',aria-labelledby="exampleModalLabel", data-keyboard="false",aria-hidden='true')
+    .modal-dialog(role='document')
+        .modal-Myheader
+            button.close(type="button"  data-dismiss="modal")
+                span(aria-hidden="true") &times;
+            .GetMail
+                .imgF
+                    img(src="../../IMG/flowers.png", alt="")
+                    img(src="../../IMG/shadow.png", alt="")
+                .formEmail
+                    p.title NHẬN TIN TỨC TỪ CHÚNG TÔI
+                    P.title1 ĐĂNG KÍ EMAIL NGAY HÔM NAY
+                    form.formEmail__sMail__form(action="", method="get")
+                        input.inputMail(type="text")
+                        a(href="")
+                            img(src="../../IMG/icon_sendMail.png", alt="")
+                    form(action="")
+                        input#exampleCheck1.form-check-input(type="checkbox") 
+                        label.form-check-label(for="exampleCheck1") Không hiển thị thông báo này nữa  

@@ -1,14 +1,14 @@
-.containerHome {
+.container-home {
   margin-left: 388.5px;
   width: 1145px;
   margin-top: 58px;
 }
 
-.containerHome .checked {
+.container-home .checked {
   color: yellow;
 }
 
-.containerHome__best__p, .containerHome .title__new__p, .containerHome .title__sell__p, .containerHome__titleSell .title__sell__p, .containerHome__titleSell .title__sale__p {
+.container-home__best__p, .container-home__titleSell .title__sell__p, .container-home__titleSell .title__sale__p, .container-home .title__new__p, .container-home .title__info__p {
   display: inline-block;
   color: #54c081;
   font-weight: bold;
@@ -17,12 +17,12 @@
   margin-bottom: 0rem;
 }
 
-.containerHome__best__hr, .containerHome .title__new__hr, .containerHome .title__sell__hr, .containerHome__titleSell .title__sell__hr, .containerHome__titleSell .title__sale__hr, .containerHome .title__info__hr {
+.container-home__best__hr, .container-home__titleSell .title__sell__hr, .container-home__titleSell .title__sale__hr, .container-home .title__new__hr, .container-home .title__info__hr {
   margin-top: 0rem;
   margin-bottom: 40px;
 }
 
-.containerHome__best__list {
+.container-home__best__list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -32,12 +32,12 @@
   grid-gap: 32px;
 }
 
-.containerHome__best__list .card {
+.container-home__best__list .card {
   text-align: center;
   position: relative;
 }
 
-.containerHome__best__list .card__status {
+.container-home__best__list .card__status {
   position: absolute;
   color: white;
   background: #54c081;
@@ -48,11 +48,11 @@
   left: 10px;
 }
 
-.containerHome__best__list .card__status__p {
+.container-home__best__list .card__status__p {
   margin-top: 13px;
 }
 
-.containerHome__best__list .card__action {
+.container-home__best__list .card__action {
   position: absolute;
   color: white;
   background: #54c081;
@@ -63,11 +63,11 @@
   left: 177px;
 }
 
-.containerHome__best__list .card__action__p {
+.container-home__best__list .card__action__p {
   margin-top: 10px;
 }
 
-.containerHome__best__list .card__search {
+.container-home__best__list .card__search {
   position: absolute;
   color: white;
   background: #54c081;
@@ -78,15 +78,15 @@
   left: 335px;
 }
 
-.containerHome__best__list .card__search img {
+.container-home__best__list .card__search img {
   margin-top: 12px;
 }
 
-.containerHome__best__list__list1 {
+.container-home__best__list__list1 {
   background-color: white;
 }
 
-.containerHome__best__list__list1__listCard {
+.container-home__best__list__list1__listCard {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -97,11 +97,11 @@
   margin-top: 32px;
 }
 
-.containerHome__best__list__list2 {
+.container-home__best__list__list2 {
   background-color: white;
 }
 
-.containerHome__best__list__list2__listCard {
+.container-home__best__list__list2__listCard {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -111,14 +111,18 @@
   grid-gap: 32px;
 }
 
-.containerHome__best__list__list2__Cardbig {
+.container-home__best__list__list2__Cardbig {
   margin-top: 32px;
 }
 
-.containerHome__sell {
-  display: -ms-grid;
-  display: grid;
+.container-home__titleSell {
+  margin-top: 20px;
+}
+
+.container-home__sell {
   width: 100%;
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: auto auto;
@@ -126,10 +130,10 @@
   grid-gap: 32px;
 }
 
-.containerHome__sell__list, .containerHome__titleSell {
+.container-home__sell__list, .container-home__titleSell {
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  width: 100%;
   -ms-grid-columns: 262px 849px;
       grid-template-columns: 262px 849px;
   -ms-grid-rows: auto;
@@ -137,26 +141,27 @@
   grid-gap: 32px;
 }
 
-.containerHome__sell__list__best {
+.container-home__sell__list__best {
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  width: 100%;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
+  grid-gap: 0px;
 }
 
-.containerHome__sell__list__best img {
+.container-home__sell__list__best img {
   width: 77px;
   height: 77px;
   margin: 20px;
 }
 
-.containerHome__sell__list__sale {
+.container-home__sell__list__sale {
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  width: 100%;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: auto auto;
@@ -164,18 +169,14 @@
   grid-gap: 32px;
 }
 
-.containerHome__sell__advertisement {
+.container-home__sell__advertisement {
   height: 300px;
   width: 100%;
   background: url(../../IMG/banner-11140x217.png);
   background-repeat: no-repeat;
 }
 
-.containerHome__titleSell {
-  margin-top: 20px;
-}
-
-.containerHome__new {
+.container-home__new {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -185,11 +186,11 @@
   grid-gap: 32px;
 }
 
-.containerHome .title__info__hr {
+.container-home .title__info__hr {
   width: 1147px;
 }
 
-.containerHome__info {
+.container-home__info {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -199,15 +200,15 @@
   grid-gap: 32px;
 }
 
-.containerHome__info .card {
+.container-home__info .card {
   border: none;
 }
 
-.containerHome__info .card-body {
+.container-home__info .card-body {
   padding: 0px;
 }
 
-.containerHome__info .card-date {
+.container-home__info .card-date {
   color: #918e8e;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -215,21 +216,104 @@
   margin-bottom: 10px;
 }
 
-.containerHome__info .card-ten {
+.container-home__info .card-name {
   color: #3fb871;
   font-weight: bold;
   font-size: 14px;
 }
 
-.containerHome__info .card-detail {
+.container-home__info .card-detail {
   color: #918e8e;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
 
-.containerHome__info .text-cont {
+.container-home__info .text-cont {
   color: #3fb871;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 480px) {
+  .container-home {
+    width: 320px;
+    margin-left: 0px;
+  }
+  .container-home__best__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+    grid-gap: 21px;
+  }
+  .container-home__sell__list, .container-home__titleSell {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    grid-gap: 21px;
+    margin-left: 33px;
+    margin-right: 33px;
+  }
+  .container-home__sell__list__best {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+    grid-gap: 0px;
+  }
+  .container-home__sell__list__best img {
+    width: 77px;
+    height: 77px;
+    margin: 20px;
+  }
+  .container-home__sell__list__sale {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 21px;
+  }
+  .container-home__sell__advertisement {
+    background: url(../../IMG/12-Mobile_03.png);
+    background-repeat: no-repeat;
+    width: 289px;
+    margin-left: 10px;
+    height: 80px;
+  }
+  .container-home__new {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 21px;
+  }
+  .container-home__titleSell {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+    grid-gap: 0px;
+  }
+  .container-home__titleSell .title__sale {
+    display: none;
+  }
+  .container-home__info {
+    display: none;
+  }
 }
 /*# sourceMappingURL=home.css.map */

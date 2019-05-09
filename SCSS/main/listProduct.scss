@@ -1,0 +1,204 @@
+@mixin grid($property, $columns, $row, $grap) {
+  display: $property;
+  grid-template-columns: $columns;
+  grid-template-rows: $row;
+  grid-gap: $grap;
+}
+@mixin title_p() {
+  display: inline-block;
+  color: #54c081;
+  font-weight: bold;
+  height: 44px;
+  border-bottom: 3px solid #54c081;
+  margin-bottom: 0rem;
+}
+@mixin title_hr() {
+  margin-top: 0rem;
+  margin-bottom: 10px;
+}
+
+.contentMainlist {
+  margin-left: 300px;
+  width: 1141px;
+  .addressLocal {
+    margin-top: 19px;
+    height: 63px;
+    .addressLocal__a {
+      color: #818181;
+    }
+    .addressLocal__a1 {
+      color: #3fb871;
+    }
+  }
+  .content {
+    @include grid(grid, 293px auto, auto, 32px);
+    &__classify {
+      a {
+        color: #818181;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0px;
+      }
+      &__listProduct {
+        &__title {
+          &__p {
+            @include title_p();
+          }
+          &__hr {
+            @include title_hr();
+          }
+        }
+      }
+      &__searchPrice {
+        &__title {
+          &__p {
+            margin-top: 1px;
+            @include title_p();
+          }
+          &__hr {
+            @include title_hr();
+          }
+        }
+      }
+      &__searchColor {
+        &__title {
+          &__p {
+            @include title_p();
+          }
+          &__hr {
+            @include title_hr();
+          }
+        }
+        &__content {
+          @include grid(grid, auto auto, auto, 32px);
+          ul {
+            list-style: none;
+            padding-left: 0px;
+            li {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+    &__listProduct {
+      .checked {
+        color: yellow;
+      }
+      &__control {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        img {
+          padding-top: 16px;
+        }
+        @include grid(grid, 33px 33px 629px auto, auto, 0px);
+        p {
+          display: inline-block;
+          font-family: Arial, Helvetica, sans-serif;
+          margin-top: 15px;
+          margin-right: 15px;
+        }
+        &__SortName {
+          text-align: right;
+          .btn-group {
+            border: 1px solid #918e8e;
+            .btn {
+              color: #918e8e;
+            }
+          }
+        }
+        &__numberElement {
+          @extend  .content__listProduct__control__SortName;
+        }
+      }
+      &__display {
+        margin-bottom: 20px;
+        @include grid(grid, auto, auto, 10px);
+        .card-title {
+          color: #6b6969;
+          font-weight: bold;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        p.card-text {
+          color: #918e8e;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 12px;
+        }
+        .card {
+          border: none;
+          .card-body {
+            .card-price {
+              color: rgb(185, 30, 30);
+            }
+            &__action {
+              @include grid(grid, 146px 44px 44px, auto, 20px);
+              &__buy {
+                background-color: #3fb871;
+                color: white;
+                border-radius: 50px;
+                width: 146px;
+                height: 44px;
+                padding-top: 10px;
+                text-align: center;
+                a {
+                  color: white;
+                }
+              }
+              &__seach {
+                img {
+                  padding-top: 13px;
+                }
+                height: 44px;
+                width: 44px;
+                border-radius: 50px;
+                border: 1px solid;
+                border-color: #6b6969;
+                text-align: center;
+              }
+              &__love {
+                img {
+                  padding-top: 13px;
+                }
+                @extend .card-body__action__seach;
+              }
+            }
+          }
+        }
+        &__numberPage {
+          margin-top: 50px;
+          text-align: right;
+          ul {
+           padding-left: 408px;
+           text-align: left;
+            list-style: none;
+            li {
+              display: inline-block;
+              margin-right: 5px;
+              border: 1px solid #818181;
+              height: 45px;
+              width: 44px;
+              a{
+                display: inline-block;
+                margin-top: 7px;
+                margin-left: 15px;
+              }
+            }
+            li:hover{
+              background: #3fb871;
+              a{
+                color: white;
+              }
+            }
+            .li1{
+              width: 105px;
+            }
+            .li5{
+              width: 105px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

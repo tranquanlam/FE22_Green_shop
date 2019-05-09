@@ -1,0 +1,97 @@
+include ..\DATA\DTlistProduct
+include ..\DATA\MXhome
+.contentMainlist
+    .addressLocal
+        a.addressLocal__a(href="") Home
+        a.addressLocal__a1(href="") /Danh sách sản phẩm
+    .content
+        .content__classify
+            .content__classify__listProduct
+                .content__classify__listProduct__title
+                    p.content__classify__listProduct__title__p Danh mục sản phẩm
+                    hr.content__classify__listProduct__title__hr
+                .content__classify__listProduct__content
+                    ul
+                        each n,i in arrayContent
+                            li
+                                a(href="")=">"+n
+                                hr
+            .content__classify__searchPrice
+                .content__classify__searchPrice__title
+                    p.content__classify__searchPrice__title__p Tìm theo giá
+                    hr.content__classify__searchPrice__title__hr
+                .content__classify__searchPrice__content
+                    ul
+                        each n,i in arrayContent1
+                            li
+                                a(href="")=">"+n
+                                hr
+            .content__classify__searchColor
+                .content__classify__searchColor__title
+                    p.content__classify__searchColor__title__p Tìm theo màu
+                    hr.content__classify__searchColor__title__hr
+                .content__classify__searchColor__content
+                    .list1
+                        ul
+                            each n,i in arrayColor1
+                                li
+                                    a(href="")
+                                        img(src=n.img, alt="")
+                                        | #{n.name}
+                    .list2
+                        ul
+                            each n,i in arrayColor2
+                                li
+                                    a(href="")
+                                        img(src=n.img, alt="")
+                                        | #{n.name}
+        .content__listProduct
+            img.firstImg(src="../../IMG/The_Sill_84_Hester2.png", alt="")
+            .content__listProduct__control
+                a.listGrid(href="")
+                    img(src="../../IMG/listGrid.png", alt="")
+                a.listRow(href="")
+                    img(src="../../IMG/list.png", alt="")
+                .content__listProduct__control__SortName
+                    p Sắp xếp theo tên
+                    .btn-group
+                        button.btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                            | Tên sản phẩm 
+                            span.caret  
+                        ul.dropdown-menu
+                            li
+                            a(href='#') test 1
+                            li
+                            a(href='#') test 2
+                            li
+                            a(href='#') test 3
+                .content__listProduct__control__numberElement
+                    p Show
+                    .btn-group
+                        button.btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                            | 15 
+                            span.caret  
+                        ul.dropdown-menu
+                            li
+                            a(href='#') test 1
+                            li
+                            a(href='#') test 2
+                            li
+                            a(href='#') test 3
+            .content__listProduct__display
+                each n,i in arrayCay
+                    +my-card-hor-list-Product(n)
+                .content__listProduct__display__numberPage
+                    ul
+                        li.li1
+                            a(href="") Trang trước
+                        li.li2
+                            a(href="") 1
+                        li.li2
+                            a(href="") 2
+                        li.li3
+                            a(href="") 3
+                        li.li4
+                            a(href="") 4
+                        li.li5
+                            a(href="") Trang cuối                               

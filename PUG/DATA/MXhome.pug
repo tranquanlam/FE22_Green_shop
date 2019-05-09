@@ -29,5 +29,24 @@ mixin my-card-info (object)
             p.card-ten #{object.ten}
             p.card-detail #{object.detail}
             a(href="")
-                i.text-cont Đọc tiếp
-    
+                i.text-cont Đọc tiếp 
+mixin my-card-hor-list-Product (object)
+    .card
+        .row
+            .col-4
+                img.card-img(src=object.src, alt='...')
+            .col-8
+                .card-body
+                    p.card-title #{object.ten}
+                    p.card-text #{object.mota}
+                    +star()
+                    p.card-price #{object.price}
+                    .card-body__action
+                        .card-body__action__buy
+                            a(href="") MUA NGAY
+                        .card-body__action__seach
+                            a(href="")
+                                img(src="../../IMG/icon-search-ct.png", alt="")
+                        .card-body__action__love
+                            a(href="")
+                                img(src="../../IMG/heart.png", alt="")

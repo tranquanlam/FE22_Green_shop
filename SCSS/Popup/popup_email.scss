@@ -1,0 +1,62 @@
+@mixin grid($property, $columns, $row, $grap) {
+  display: $property;
+  grid-template-columns: $columns;
+  grid-template-rows: $row;
+  grid-gap: $grap;
+}
+.modal-open .modal {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modal-Myheader {
+  .close {
+    text-align: right;
+  }
+  height: 400px;
+  width: 800px;
+  background-color: aliceblue;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  @include grid(grid, auto, auto auto, 0px);
+  .GetMail {
+    @include grid(grid, 369px 400px, auto, 0px);
+    .title {
+        font-family: "Amatic SC", cursive;
+        font-size: 40px;
+      }
+      .title1 {
+        
+        font-weight: bold;
+      }
+    .formEmail {
+      margin-left: 15px;
+      color: #3fb871;
+      &__sMail {
+        &__form {
+            background: #3fb871;
+            height:  46px;
+            margin-bottom: 100px;
+          .inputMail {
+            height: 46px;
+            width: 330px;
+            padding-top: 0px;
+          }
+          a {
+            display: inline-block;
+            height: 46px;
+            width: 45px;
+            text-align: center;
+          }
+          .form-check-input{
+              position: static;
+              margin-left: 0px;
+          }
+        }
+      }
+    }
+  }
+}
