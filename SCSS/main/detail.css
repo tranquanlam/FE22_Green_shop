@@ -1,0 +1,148 @@
+.content-detail {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  grid-gap: 20px;
+  margin-left: 388.5px;
+  margin-right: 388px;
+}
+
+.content-detail .checked {
+  color: yellow;
+}
+
+.content-detail .addressLocal {
+  margin-top: 19px;
+  height: 63px;
+}
+
+.content-detail .addressLocal .addressLocal__a {
+  color: #818181;
+}
+
+.content-detail .addressLocal .addressLocal__a1 {
+  color: #3fb871;
+}
+
+.content-detail .detail {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  grid-gap: 20px;
+}
+
+.content-detail .detail__content {
+  width: 1138px;
+  margin-bottom: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.content-detail .detail__content__container__mySlides {
+  margin-bottom: 20px;
+}
+
+.content-detail .detail__content__info__title p {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.content-detail .detail__content__info__title .price {
+  color: red;
+}
+
+.content-detail .detail__content__info__decription {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #818181;
+}
+
+.content-detail .detail__content__info hr {
+  padding: 5px;
+}
+
+.content-detail .detail__content__info .card-body__action {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 146px 44px 44px;
+      grid-template-columns: 146px 44px 44px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.content-detail .detail__content__info .card-body__action__buy {
+  background-color: #3fb871;
+  color: white;
+  border-radius: 50px;
+  width: 146px;
+  height: 44px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.content-detail .detail__content__info .card-body__action__buy a {
+  color: white;
+}
+
+.content-detail .detail__content__info .card-body__action__seach, .content-detail .detail__content__info .card-body__action__love {
+  height: 44px;
+  width: 44px;
+  border-radius: 50px;
+  border: 1px solid;
+  border-color: #6b6969;
+  text-align: center;
+}
+
+.content-detail .detail__content__info .card-body__action__seach img, .content-detail .detail__content__info .card-body__action__love img {
+  padding-top: 13px;
+}
+
+.content-detail .detail__content__info .card-body__action__love img {
+  padding-top: 13px;
+}
+
+.content-detail .detail__source .tab-content {
+  border: 1px solid #d1cdcd;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #818181;
+  padding: 20px;
+}
+
+.content-detail .different-product-title p {
+  display: inline-block;
+  color: #54c081;
+  font-weight: bold;
+  height: 40px;
+  border-bottom: 3px solid #54c081;
+  margin-bottom: 0rem;
+}
+
+.content-detail .different-product-title hr {
+  padding: 1px;
+  margin-top: 0rem;
+  margin-bottom: 40px;
+}
+
+.content-detail .different-product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 20px;
+  margin-bottom: 100px;
+}
+/*# sourceMappingURL=detail.css.map */

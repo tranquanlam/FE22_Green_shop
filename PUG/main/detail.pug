@@ -1,0 +1,89 @@
+include ..\DATA\MXhome
+include ..\DATA\DThome
+
+-const arrayBestSell=[caycota,cayduanho,caydalam,caydanhdu]
+.content-detail
+    .addressLocal
+        a.addressLocal__a(href="") Home
+        a.addressLocal__a1(href="") /Danh sách sản phẩm
+    .detail
+        .detail__content
+            .detail__content__container
+                .detail__content__container__mySlides
+                    each n,i in arrayCay1
+                        .mySlides
+                            .numbertext
+                            img(src=n.src, style='width:100%')
+                .row
+                    .col-sm
+                        img.demo.cursor(src='../../IMG/spx2-4.png',style='width:100%', onclick='currentSlide(1)', alt='The Woods')
+                    .col-sm
+                        img.demo.cursor(src='../../IMG/spx2-11.png', style='width:100%', onclick='currentSlide(2)', alt='Cinque Terre')
+                    .col-sm
+                        img.demo.cursor(src='../../IMG/spx2-6.png', style='width:100%', onclick='currentSlide(3)', alt='Mountains and fjords')
+                    .col-sm
+                        img.demo.cursor(src='../../IMG/spx2-5.png', style='width:100%', onclick='currentSlide(4)', alt='Northern Lights')
+                    .col-sm
+                        img.demo.cursor(src='../../IMG/spx2-15.png', style='width:100%', onclick='currentSlide(5)', alt='Nature and sunrise')
+            .detail__content__info
+                .detail__content__info__title
+                    p Cây dạ lam
+                    +star()
+                    p.price 4.490.000 đ
+                hr
+                .detail__content__info__decription
+                    p Cây mọc bụi thưa, thân vươn thẳng với chiều cao trung bình từ 0,8-1,2m. Lá hình trứng, mép lá nguyên,gân lá nổi rõ, phiến rộng khoảng từ 15-20cm.Lá có màu xanh đậm ở mặt trên, quanh gân có màu trắng sữa; mặt dưới lá nhạt màu hơn.Lá cây dạ lam mọc cánh, cuống lá dài khi rụng để lại các khía màu nâu nhạt.   
+                hr
+                .detail__content__info__number
+                    p Số lượng
+                hr
+                .detail__content__info__action
+                    .card-body__action
+                        .card-body__action__buy
+                            a(href="") MUA NGAY
+                        .card-body__action__seach
+                            a(href="")
+                                img(src="../../IMG/icon-search-ct.png", alt="")
+                        .card-body__action__love
+                            a(href="")
+                                img(src="../../IMG/heart.png", alt="")
+                hr
+                .detail__content__info__connect
+                    img(src="../../IMG/fatw6.png", alt="")
+        .detail__source
+            .mt-3
+                br
+                ul.nav.nav-tabs
+                    li.nav-item
+                        a.nav-link.active(data-toggle='tab', href='#home') Home
+                    li.nav-item
+                        a.nav-link(data-toggle='tab', href='#menu1') Menu 1
+                    li.nav-item
+                        a.nav-link(data-toggle='tab', href='#menu2') Menu 2
+                .tab-content
+                    #home.tab-pane.active
+                        br
+                        p Tên phổ thông  : Giả Lan Huỳnh Tinh cảnh vòng vòng
+                        p Tên khoa học :  Calathea zebria
+                        p Họ thực vật :Marantaceae (Củ dong)
+                        p Chiều cao  : 0,8 - 1,2m
+                        p Cây dạ lam có nguồn gốc từ Brazil,được du nhập và phân bố rộng khắp ở Việt Nam
+                        p Cây mọc thành bụi thưa thân luôn thẳng với chiều cao cây trung bình từ 0,8 đến 1m lá hình trứng mép lá Nguyên gân lá nổi Rõ biến động khoảng từ 15 đến 20 cm có lá có màu xanh đậm ở mặt trên quanh lá có màu trắng sữa mặt dưới lá nhạt màu hơn lá cây dạ lan mọc cách uống lá dài khi rụng để lại các khi màu nâu nhạt Đây là loại cây có dáng đẹp .Tươi khỏe cây rất phù hợp trồng chậu trang trí nội thất văn phòng ngoài ra cây còn có đặc điểm lọc khí làm xanh mát môi trường giúp điều hòa không khí đặc biệt tốt cho những môi trường thường xuyên sử dụng các loại máy móc tăng nhiệt có thể bày cây ở hành lang ở giữa sảnh đặt ở cạnh bàn làm việc hoặc trang trí các góc phòng có diện tích trung bình
+
+                    #menu1.tab-pane.fade
+                        br
+                        h3 Menu 1
+                        p
+                            | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    #menu2.tab-pane.fade
+                        br
+                        h3 Menu 2
+                        p
+                          | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+    .different-product-title
+            p Sản phẩm mua nhiều
+            hr
+    .different-product
+        each n,i in arrayBestSell
+            .card        
+                +my-card-body(n)

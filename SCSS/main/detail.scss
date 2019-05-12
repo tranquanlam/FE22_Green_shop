@@ -1,0 +1,116 @@
+@mixin grid($property, $columns, $row, $grap) {
+  display: $property;
+  grid-template-columns: $columns;
+  grid-template-rows: $row;
+  grid-gap: $grap;
+}
+.content-detail {
+  @include grid(grid, auto, auto auto auto, 20px);
+  margin-left: 388.5px;
+  margin-right: 388px;
+  .checked {
+    color: yellow;
+  }
+  .addressLocal {
+    margin-top: 19px;
+    height: 63px;
+    .addressLocal__a {
+      color: #818181;
+    }
+    .addressLocal__a1 {
+      color: #3fb871;
+    }
+  }
+  .detail {
+    @include grid(grid, auto, auto auto, 20px);
+    &__content {
+      width: 1138px;
+      margin-bottom: 50px;
+      @include grid(grid, auto auto, auto, 20px);
+      &__container {
+        &__mySlides {
+          margin-bottom: 20px;
+        }
+      }
+      &__info {
+        &__title {
+          
+          p {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+          }
+          .price {
+            color: red;
+          }
+        }
+        &__decription {
+          font-family: Arial, Helvetica, sans-serif;
+          color: #818181;
+        }
+        hr {
+          padding: 5px;
+        }
+        .card-body__action {
+          @include grid(grid, 146px 44px 44px, auto, 20px);
+          &__buy {
+            background-color: #3fb871;
+            color: white;
+            border-radius: 50px;
+            width: 146px;
+            height: 44px;
+            padding-top: 10px;
+            text-align: center;
+            a {
+              color: white;
+            }
+          }
+          &__seach {
+            img {
+              padding-top: 13px;
+            }
+            height: 44px;
+            width: 44px;
+            border-radius: 50px;
+            border: 1px solid;
+            border-color: #6b6969;
+            text-align: center;
+          }
+          &__love {
+            img {
+              padding-top: 13px;
+            }
+            @extend .card-body__action__seach;
+          }
+        }
+      }
+    }
+    &__source {
+      .tab-content{
+        border: 1px solid #d1cdcd;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #818181;
+        padding: 20px;
+      }
+    }
+  }
+  .different-product-title {
+    p {
+      display: inline-block;
+      color: #54c081;
+      font-weight: bold;
+      height: 40px;
+      border-bottom: 3px solid #54c081;
+      margin-bottom: 0rem;
+    }
+    hr {
+      padding: 1px;
+      margin-top: 0rem;
+      margin-bottom: 40px;
+    }
+  }
+  .different-product{
+    @include grid(grid, auto auto auto auto, auto, 20px);
+    margin-bottom: 100px
+  }
+}
