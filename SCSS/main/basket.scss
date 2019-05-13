@@ -1,0 +1,125 @@
+.container-tableBK {
+  margin-left: 388.5px;
+  .addressLocal {
+    margin-top: 19px;
+    height: 63px;
+    .addressLocal__a {
+      color: #818181;
+    }
+    .addressLocal__a1 {
+      color: #3fb871;
+    }
+  }
+  .title {
+    color: #68ba8f;
+    font-weight: bold;
+    margin-bottom: 70px;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .Table {
+    color: #68ba8f;
+    font-family: Arial, Helvetica, sans-serif;
+    #basket td,
+    #basket th {
+      border: 1px solid #ddd;
+      padding-left: 18px;
+      padding-right: 18px;
+      height: 47px;
+    }
+    #basket th {
+      text-align: center;
+      background-color: #3fb871;
+      color: white;
+      font-weight: 100;
+    }
+    #basket td {
+      padding: 18px;
+      .img-product {
+        width: 154px;
+        height: 154px;
+      }
+    }
+    #basket {
+      .number {
+        p {
+          text-align: center;
+          margin-bottom: 0px;
+          padding-left: 54px;
+          padding-right: 54px;
+        }
+      }
+      .price {
+        p {
+          text-align: center;
+          margin-bottom: 0px;
+          width: 120px;
+        }
+      }
+      .price-total {
+        p {
+          text-align: center;
+          margin-bottom: 0px;
+          width: 200px;
+        }
+      }
+      .cancel {
+        text-align: center;
+        margin-bottom: 0px;
+        padding-left: 54px;
+        padding-right: 54px;
+      }
+      .name-product {
+        text-align: center;
+        margin-bottom: 0px;
+        padding-left: 54px;
+        padding-right: 54px;
+      }
+    }
+    &__action {
+      width: 1110px;
+      text-align: right;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      &__cancel {
+        display: inline-block;
+        border-radius: 30px;
+        height: 47px;
+        width: 150px;
+        border: 1px solid;
+        text-align: center;
+        padding-top: 11px;
+      }
+      &__go {
+        @extend .Table__action__cancel;
+        margin-left: 20px;
+        color: white;
+        background: #3fb871;
+      }
+    }
+    &__pay {
+      width: 682px;
+      margin-left: 457px;
+      margin-bottom: 100px;
+      table th,
+      td {
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+        border: 1px solid #ddd;
+        padding-left: 90px;
+        padding-right: 90px;
+        height: 90px;
+      }
+      .total{
+        background-color: #3fb871;
+        color: white;
+        td{
+            font-size: 17px;
+        }
+      }
+    }
+  }
+}

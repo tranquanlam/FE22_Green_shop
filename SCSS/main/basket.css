@@ -1,0 +1,138 @@
+.container-tableBK {
+  margin-left: 388.5px;
+}
+
+.container-tableBK .addressLocal {
+  margin-top: 19px;
+  height: 63px;
+}
+
+.container-tableBK .addressLocal .addressLocal__a {
+  color: #818181;
+}
+
+.container-tableBK .addressLocal .addressLocal__a1 {
+  color: #3fb871;
+}
+
+.container-tableBK .title {
+  color: #68ba8f;
+  font-weight: bold;
+  margin-bottom: 70px;
+  font-size: 21px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-tableBK .Table {
+  color: #68ba8f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-tableBK .Table #basket td,
+.container-tableBK .Table #basket th {
+  border: 1px solid #ddd;
+  padding-left: 18px;
+  padding-right: 18px;
+  height: 47px;
+}
+
+.container-tableBK .Table #basket th {
+  text-align: center;
+  background-color: #3fb871;
+  color: white;
+  font-weight: 100;
+}
+
+.container-tableBK .Table #basket td {
+  padding: 18px;
+}
+
+.container-tableBK .Table #basket td .img-product {
+  width: 154px;
+  height: 154px;
+}
+
+.container-tableBK .Table #basket .number p {
+  text-align: center;
+  margin-bottom: 0px;
+  padding-left: 54px;
+  padding-right: 54px;
+}
+
+.container-tableBK .Table #basket .price p {
+  text-align: center;
+  margin-bottom: 0px;
+  width: 120px;
+}
+
+.container-tableBK .Table #basket .price-total p {
+  text-align: center;
+  margin-bottom: 0px;
+  width: 200px;
+}
+
+.container-tableBK .Table #basket .cancel {
+  text-align: center;
+  margin-bottom: 0px;
+  padding-left: 54px;
+  padding-right: 54px;
+}
+
+.container-tableBK .Table #basket .name-product {
+  text-align: center;
+  margin-bottom: 0px;
+  padding-left: 54px;
+  padding-right: 54px;
+}
+
+.container-tableBK .Table__action {
+  width: 1110px;
+  text-align: right;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-tableBK .Table__action__cancel, .container-tableBK .Table__action__go {
+  display: inline-block;
+  border-radius: 30px;
+  height: 47px;
+  width: 150px;
+  border: 1px solid;
+  text-align: center;
+  padding-top: 11px;
+}
+
+.container-tableBK .Table__action__go {
+  margin-left: 20px;
+  color: white;
+  background: #3fb871;
+}
+
+.container-tableBK .Table__pay {
+  width: 682px;
+  margin-left: 457px;
+  margin-bottom: 100px;
+}
+
+.container-tableBK .Table__pay table th,
+.container-tableBK .Table__pay td {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  padding-left: 90px;
+  padding-right: 90px;
+  height: 90px;
+}
+
+.container-tableBK .Table__pay .total {
+  background-color: #3fb871;
+  color: white;
+}
+
+.container-tableBK .Table__pay .total td {
+  font-size: 17px;
+}
+/*# sourceMappingURL=basket.css.map */
