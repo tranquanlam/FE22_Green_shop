@@ -50,3 +50,22 @@ mixin my-card-hor-list-Product (object)
                         .card-body__action__love
                             a(href="")
                                 img(src="../../IMG/heart.png", alt="")
+mixin my-card-hor-new(object)
+    .card
+        .row
+            .col-4
+                img.card-img(src=object.src, alt='...')
+            .col-8
+                .card-body
+                    p.card-text #{object.mota}
+mixin my-comment()
+    .row
+        .col-3
+            img.avatar(src="../../IMG/avatar.png", alt='...')
+        .col-9
+            .nickname
+                p Nguyễn Văn An
+                a(href="") Trả lời
+            p.content-chat This is Photoshop's version of Lorem Ipsum.Prion gravida nibh vel velit auctor qliquet.Aenean sollicitudin,lorem quí bibendum auctor,nisi elit consequat,nec sagittis sen nibh id elit
+            p.content-chat-date 
+                i thứ 7,26/12/2019 13:00 AM
