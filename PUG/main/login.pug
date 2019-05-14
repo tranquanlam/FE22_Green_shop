@@ -1,0 +1,25 @@
+.containerLogin
+    .addressLocal
+        a.addressLocal__a(href="") Home
+        a.addressLocal__a1(href="") /Đăng nhập
+    .login
+        .login__form
+            .login__form__title  THÔNG TIN CÁ NHÂN
+            .login__form__getInfo
+                form(action="", method="get")
+                    label.email(for="email") Email của bạn :
+                    input#email(type="email", name="")
+                    label.password(for="password") Password :
+                    input#password(type="password", name="")
+                    .statusAcount
+                        input#remember(type="checkbox", name="")
+                        label.remember(for="remember") ghi nhớ tài khoản
+                        a(href="").fogot
+                            i Bạn quên mật khẩu ?
+                    .btn-login
+                        |ĐĂNG NHẬP
+        .sign-in
+            p.title BẠN CHƯA CÓ TÀI KHOẢN ?
+            P Đăng ký tài khoản ngay để có thể mua hàng nhanh chóng và dễ dàng hơn ! Ngoài ra còn có rất nhiều chính sách và ưu đãi cho các thành viên citybike
+            .sign-btn  
+                |ĐĂNG KÍ              

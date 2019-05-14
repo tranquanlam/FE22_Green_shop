@@ -1,0 +1,83 @@
+@mixin grid($property, $columns, $row, $grap) {
+  display: $property;
+  grid-template-columns: $columns;
+  grid-template-rows: $row;
+  grid-gap: $grap;
+}
+.containerLogin {
+  margin-left: 300px;
+  width: 1141px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #818181;
+  font-size: 15px;
+  margin-bottom: 100px;
+  .addressLocal {
+    margin-top: 19px;
+    height: 63px;
+    .addressLocal__a {
+      color: #818181;
+    }
+    .addressLocal__a1 {
+      color: #3fb871;
+    }
+  }
+  .login {
+    @include grid(grid, auto auto, auto, 32px);
+    &__form {
+      &__title {
+        color: #3fb871;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      &__getInfo {
+        .email,
+        .password {
+          display: block;
+          margin-bottom: 20px;
+          margin-top: 15px;
+        }
+        #email,
+        #password {
+          width: 512px;
+          height: 45px;
+        }
+        .statusAcount {
+          margin-top: 20px;
+          margin-bottom: 40px;
+          .fogot {
+            padding-left: 34px;
+          }
+        }
+        .btn-login {
+          width: 146px;
+          height: 44px;
+          background-color: #3fb871;
+          color: white;
+          border: 1px solid #3fb871;
+          border-radius: 40px;
+          text-align: center;
+          padding-top: 10px;
+        }
+      }
+    }
+    .sign-in {
+      .title {
+        color: #3fb871;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .sign-btn {
+        width: 146px;
+        height: 44px;
+        background-color: #3fb871;
+        color: white;
+        border: 1px solid #3fb871;
+        border-radius: 40px;
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 40px;
+          
+      }
+    }
+  }
+}

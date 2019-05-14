@@ -1,0 +1,89 @@
+.containerLogin {
+  margin-left: 300px;
+  width: 1141px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #818181;
+  font-size: 15px;
+  margin-bottom: 100px;
+}
+
+.containerLogin .addressLocal {
+  margin-top: 19px;
+  height: 63px;
+}
+
+.containerLogin .addressLocal .addressLocal__a {
+  color: #818181;
+}
+
+.containerLogin .addressLocal .addressLocal__a1 {
+  color: #3fb871;
+}
+
+.containerLogin .login {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 32px;
+}
+
+.containerLogin .login__form__title {
+  color: #3fb871;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.containerLogin .login__form__getInfo .email,
+.containerLogin .login__form__getInfo .password {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.containerLogin .login__form__getInfo #email,
+.containerLogin .login__form__getInfo #password {
+  width: 512px;
+  height: 45px;
+}
+
+.containerLogin .login__form__getInfo .statusAcount {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.containerLogin .login__form__getInfo .statusAcount .fogot {
+  padding-left: 34px;
+}
+
+.containerLogin .login__form__getInfo .btn-login {
+  width: 146px;
+  height: 44px;
+  background-color: #3fb871;
+  color: white;
+  border: 1px solid #3fb871;
+  border-radius: 40px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.containerLogin .login .sign-in .title {
+  color: #3fb871;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.containerLogin .login .sign-in .sign-btn {
+  width: 146px;
+  height: 44px;
+  background-color: #3fb871;
+  color: white;
+  border: 1px solid #3fb871;
+  border-radius: 40px;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 40px;
+}
+/*# sourceMappingURL=login.css.map */
