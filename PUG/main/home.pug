@@ -4,42 +4,12 @@ include ..\DATA\MXhome
     .container-home__best
         p.container-home__best__p Sản phẩm nổi bật
         hr.container-home__best__hr
-        .container-home__best__list
-            .container-home__best__list__list1
-                .container-home__best__list__list1__Cardbig
-                    .card
-                        .card__status 
-                            p.card__status__p New
-                        .card__action 
-                            p.card__status__p MUA NGAY
-                        .card__search
-                            img(src="../../IMG/icon-search-ct.png", alt="")
-                        +my-card-body(caychanchim,caychanchim.src)
-                .container-home__best__list__list1__listCard
-                    .card
-                        +my-card-body(caycota)
-                    .card
-                        +my-card-body(cayduanho)
-            .container-home__best__list__list2 
-                .container-home__best__list__list2__listCard
-                    .card
-                        .card__status 
-                            p.card__status__p -50%
-                        +my-card-body(caydalam)
-                    .card
-                        .card__status 
-                            p.card__status__p New
-                        +my-card-body(caydanhdu)
-                .container-home__best__list__list2__Cardbig
-                    .card
-                        .card__status 
-                            p.card__status__p -50%
-                        +my-card-body(caydagocnho)
+        .container-home__best__list#container-home-featuredProducts
     .container-home__titleSell
         .title__sell
             p.title__sell__p Sản phẩm mua nhiều
             hr.title__sell__hr
-        .title__sale
+        .title__sale#title__sale
             p.title__sale__p Sản phẩm khuyến mãi
             hr.title__sale__hr
     .container-home__sell
@@ -47,24 +17,18 @@ include ..\DATA\MXhome
             .container-home__sell__list__best
                 each n,i in arrayCay
                     +my-card-hor(n)
-            .container-home__sell__list__sale
-                each n,i in arrayCay1
-                    .card
-                        +my-card-body(n)
+            .container-home__sell__list__sale#container-home__sell__list__sale
         .container-home__sell__advertisement
     .container-home__titlenew
         .title__new
-            p.title__new__p Sản phẩm nổi bật
+            p.title__new__p Sản phẩm mới
             hr.title__new__hr
-    .container-home__new
-        each n,i in arrayCay3 
-            .card
-                +my-card-body(n)
+    .container-home__new#title
     .container-home__title__info
         .title__info
-            p.title__info__p Sản phẩm nổi bật
+            p.title__info__p Tin tức
             hr.title__info__hr
     .container-home__info
         +my-card-info(info1)
         +my-card-info(info2)
-        +my-card-info(info3)    
+        +my-card-info(info3)

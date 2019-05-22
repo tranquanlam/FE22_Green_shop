@@ -1,0 +1,96 @@
+{
+    "featuredProducts": [
+        {
+            "id": 1,
+            "ten": "Cây danh dự",
+            "price": "250.000 đ    ",
+            "src": "../../IMG/spx2-15.png"
+        },
+        {
+            "id": 2,
+            "ten": "Cây xương rồng",
+            "price": "250.000 đ    ",
+            "src": "../../IMG/spx2-7.png"
+        },
+        {
+            "id": 3,
+            "ten": "Cây dạ lam",
+            "price": "250.000 đ    ",
+            "src": "../../IMG/spx2-12.png"
+        },
+        {
+            "id": 4,
+            "ten": "Cây dứa nhỏ",
+            "price": "250.000 đ    ",
+            "src": "../../IMG/spx2-11.png"
+        },
+        {
+            "id": 5,
+            "ten": "Cây danh dự",
+            "price": "250.000 đ    ",
+            "src": "../../IMG/spx2-15.png"
+        },
+        {
+            "id": 6,
+            "ten": "Cây đa gốc nhỏ",
+            "price": "250.000 đ    ",
+            "src": "../../IMG/spx2-3.png"
+        },
+        {
+            "id": 7,
+            "ten": "Cây đa búp nhỏ",
+            "price": "250.000 đ    ",
+            "src": "../../IMG/caydabupnho.png"
+        },
+        {
+            "id": 8,
+            "ten": "Cây dạ lam",
+            "price": "250.000 đ    ",
+            "src": "../../IMG/spx2-12.png"
+        }
+    ],
+    "newProducts": [
+        {
+            "id": 1,
+            "ten": "Cây chân chim",
+            "content": "250.000 đ    ",
+            "src": "../../IMG/spx2-4.png"
+        },
+        {
+            "id": 2,
+            "ten": "Cây cọ ta",
+            "content": "250.000 đ    ",
+            "src": "../../IMG/spx2-11.png"
+        },
+        {
+            "id": 3,
+            "ten": "Cây dừa nhỏ",
+            "content": "250.000 đ    ",
+            "src": "../../IMG/spx2-6.png"
+        },
+        {
+            "id": 4,
+            "ten": "Cây dạ lam",
+            "content": "250.000 đ    ",
+            "src": "../../IMG/spx2-5.png"
+        },
+        {
+            "id": 5,
+            "ten": "Cây danh dự",
+            "content": "250.000 đ    ",
+            "src": "../../IMG/spx2-15.png"
+        },
+        {
+            "id": 6,
+            "ten": "Cây đa gốc nhỏ",
+            "content": "250.000 đ    ",
+            "src": "../../IMG/spx2-3.png"
+        },
+        {
+            "id": 7,
+            "ten": "Cây đa búp nhỏ",
+            "content": "250.000 đ    ",
+            "src": "../../IMG/caydabupnho.png"
+        }
+    ]
+}

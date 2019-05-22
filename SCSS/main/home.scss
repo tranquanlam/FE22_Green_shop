@@ -14,13 +14,26 @@
   top: $top;
   left: $left;
 }
+.card{box-shadow: 5px 5px 5px grey;}
 
 .container-home {
   margin-left: 388.5px;
   width: 1145px;
   margin-top: 58px;
+  font-family: Arial, Helvetica, sans-serif;
+  .card-body {
+    text-align: center;
+    .card-text {
+      color: rgb(211, 58, 58);
+      font-weight: bold;
+    }
+    strike {
+      color: #918e8e;
+      font-size: 12px;
+    }
+  }
   .checked {
-    color: yellow;
+    color: rgb(255, 136, 0);
   }
   &__best {
     &__p {
@@ -40,27 +53,33 @@
       .card {
         text-align: center;
         position: relative;
+
         &__status {
+          z-index: 1;
           @include status_Card(absolute, white, #54c081, 60px, 60px, 44px, 10px, 10px);
           &__p {
             margin-top: 13px;
           }
         }
         &__action {
+          z-index: 1;
           @include status_Card(absolute, white, #54c081, 44px, 146px, 20px, 218px, 177px);
           &__p {
-            margin-top: 10px;
+            margin-top: 8px;
           }
         }
         &__search {
+          z-index: 1;
           @include status_Card(absolute, white, #54c081, 44px, 44px, 44px, 218px, 335px);
           img {
-            margin-top: 12px;
+            margin-top: 16px;
+            margin-left: 16px;
           }
         }
       }
       &__list1 {
         background-color: white;
+
         &__listCard {
           @include grid_ContainerHome__best(grid, repeat(2, 1fr), auto, 32px);
           margin-top: 32px;
@@ -101,7 +120,7 @@
       @include grid_ContainerHome__best(grid, 262px 849px, auto, 32px);
       &__best {
         width: 100%;
-        @include grid_ContainerHome__best(grid,auto, repeat(1, 1fr), 0px);
+        @include grid_ContainerHome__best(grid, auto, repeat(1, 1fr), 0px);
         img {
           width: 77px;
           height: 77px;
@@ -110,7 +129,7 @@
       }
       &__sale {
         width: 100%;
-        @include grid_ContainerHome__best(grid,repeat(3, 1fr),auto auto , 32px);
+        @include grid_ContainerHome__best(grid, auto, auto auto, 32px);
       }
     }
     &__advertisement {
@@ -136,7 +155,7 @@
     @extend .container-home__best__hr;
     width: 1147px;
   }
-  .title__info__p{
+  .title__info__p {
     @extend .container-home__best__p;
   }
   &__info {
@@ -179,20 +198,20 @@
   .container-home {
     width: 320px;
     margin-left: 0px;
-    
+
     &__best {
       &__list {
         @include grid_ContainerHome__best(grid, auto, repeat(1, 1fr), 21px);
       }
-    }  
+    }
     &__sell {
-      &__list{
-        @include grid_ContainerHome__best(grid, auto,auto auto, 21px);
+      &__list {
+        @include grid_ContainerHome__best(grid, auto, auto auto, 21px);
         margin-left: 33px;
         margin-right: 33px;
         &__best {
           width: 100%;
-          @include grid_ContainerHome__best(grid,auto, repeat(1, 1fr), 0px);
+          @include grid_ContainerHome__best(grid, auto, repeat(1, 1fr), 0px);
           img {
             width: 77px;
             height: 77px;
@@ -201,11 +220,11 @@
         }
         &__sale {
           width: 100%;
-          @include grid_ContainerHome__best(grid,repeat(1, 1fr),auto , 21px);
+          @include grid_ContainerHome__best(grid, repeat(1, 1fr), auto, 21px);
         }
       }
       &__advertisement {
-        background:url(../../IMG/12-Mobile_03.png);
+        background: url(../../IMG/12-Mobile_03.png);
         background-repeat: no-repeat;
         width: 289px;
         margin-left: 10px;
@@ -213,11 +232,11 @@
       }
     }
     &__new {
-      @include grid_ContainerHome__best(grid,repeat(1, 1fr),auto , 21px);
+      @include grid_ContainerHome__best(grid, repeat(1, 1fr), auto, 21px);
     }
-    &__titleSell{
+    &__titleSell {
       @include grid_ContainerHome__best(grid, auto, repeat(1, 1fr), 0px);
-      .title__sale{
+      .title__sale {
         display: none;
       }
     }
@@ -226,3 +245,139 @@
     }
   }
 }
+.hovereffect {
+  position: relative;
+  text-align: center;
+  img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease-in-out;
+    .card__status {
+      display: none;
+    }
+  }
+}
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+.col-item
+{
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    background: #FFF;
+}
+.col-item .photo img
+{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.col-item .info
+{
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    margin-top: 1px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+.col-item:hover .info {
+    background-color: #F5F5DC;
+}
+.col-item .price
+{
+    /*width: 50%;*/
+    float: left;
+    margin-top: 5px;
+    display: block;
+}
+
+.col-item .price h5
+{
+    line-height: 20px;
+    margin: 0;
+}
+
+.price-text-color
+{
+    color: #219FD1;
+}
+
+.col-item .info .rating
+{
+    color: #777;
+}
+
+.col-item .rating
+{
+    /*width: 50%;*/
+    float: left;
+    font-size: 17px;
+    text-align: right;
+    line-height: 52px;
+    margin-bottom: 10px;
+    height: 52px;
+}
+
+.col-item .separator
+{
+    border-top: 1px solid #E1E1E1;
+}
+
+.clear-left
+{
+    clear: left;
+}
+
+.col-item .separator p
+{
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.col-item .separator p i
+{
+    margin-right: 5px;
+}
+.col-item .btn-add
+{
+    width: 50%;
+    float: left;
+}
+
+.col-item .btn-add
+{
+    border-right: 1px solid #E1E1E1;
+}
+
+.col-item .btn-details
+{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+}
+.controls
+{
+    margin-top: 20px;
+}
+[data-slide="prev"]
+{
+    margin-right: 10px;
+}
+
