@@ -12,4 +12,8 @@ $(document).on('click', '.card', function () {
     window.location="http://localhost:5500/INDEX/Home/detail.html?id="+proID;
    
 });
+$(document).on('click', '.detele', function () {
+    storage.removeItem(keyName);
+    window.location="http://localhost:5500/INDEX/Home/basket.html";
+});
 

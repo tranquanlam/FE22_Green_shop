@@ -41,7 +41,7 @@ $(window).on('load', function () {
         console.log(proArray[i]);
     }
     var tablePro = [];
-    var fla;
+    var fla = 0;
     proArray.forEach(function (element) {
         if (tablePro.length == 0) {
             tablePro.push(element);
@@ -49,15 +49,14 @@ $(window).on('load', function () {
         tablePro.forEach(function (elements) {
             if (element.id == elements.id) {
                 elements.number = elements.number + 1;
-                fla = false;
-            } else {
-                fla = true;
-            }
+                fla++;
+            } 
         });
-        if(fla==true){
+        if(fla < 1){
             element.number = element.number + 1;
             tablePro.push(element);
         }
+        fla = 0;
     });
     console.log(tablePro);
     var tableBasket = '	<tr>	 ' +
@@ -69,31 +68,23 @@ $(window).on('load', function () {
         '	<th>Xóa</th>	 ' +
         '	</tr>	 ';
 
-    for (i = 0; i < proArray.length; i++) {
+    for (i = 0; i < tablePro.length; i++) {
+        
         tableBasket = tableBasket + '	<tr>	 ' +
-            '	<td> <img class="img-product" src="../../IMG/spx2-1.png" alt=""></td>	 ' +
-            '	<td class="name-product">CÂY VĂN PHÒNG</td>	 ' +
+            '	<td> <img class="img-product" src="'+ tablePro[i].src+'" alt=""></td>	 ' +
+            '	<td class="name-product">'+ tablePro[i].ten+'</td>	 ' +
             '	<td class="price">	 ' +
-            '	<p>270.000 Đ</p>	 ' +
+            '	<p>'+ tablePro[i].content+'</p>	 ' +
             '	</td>	 ' +
             '	<td class="number">	 ' +
-            '	<p>1</p>	 ' +
+            '	<p>'+ tablePro[i].number+'</p>	 ' +
             '	</td>	 ' +
             '	<td class="price-total">	 ' +
-            '	<p>270.000 Đ</p>	 ' +
+            '	<p>'+ parseInt(tablePro[i].content)*tablePro[i].number+'</p>	 ' +
             '	</td>	 ' +
-            '	<td class="cancel"><img src="../../IMG/Cancel.png" alt=""></td>	 ' +
+            '	<td id="detele" class="cancel"><img src="../../IMG/Cancel.png" alt=""></td>	 ' +
             '	</tr>	 '
     }
     document.getElementById('basket').insertAdjacentHTML('afterbegin', tableBasket);
 });
-function timkiem(array, k) {
-    for (var i of array) {
-        if (i.id == k) {
-            console.log(i.id);
-            console.log(k);
-            return true;
-        }
-        return false;
-    }
-}
+

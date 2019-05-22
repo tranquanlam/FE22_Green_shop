@@ -52,4 +52,5 @@ $(document).on('click', '.card-body__action__buy', function () {
       }
     });
   });
+  window.location="http://localhost:5500/INDEX/Home/basket.html";
 });
