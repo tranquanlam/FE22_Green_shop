@@ -41,19 +41,24 @@ $(window).on('load', function () {
         console.log(proArray[i]);
     }
     var tablePro = [];
+    var fla;
     proArray.forEach(function (element) {
         if (tablePro.length == 0) {
             tablePro.push(element);
         }
         tablePro.forEach(function (elements) {
-         if (element.id == elements.id) {
-            elements.number = elements.number + 1;
-        } else {
+            if (element.id == elements.id) {
+                elements.number = elements.number + 1;
+                fla = false;
+            } else {
+                fla = true;
+            }
+        });
+        if(fla==true){
             element.number = element.number + 1;
             tablePro.push(element);
         }
     });
-});
     console.log(tablePro);
     var tableBasket = '	<tr>	 ' +
         '	<th>Hình ảnh</th>	 ' +
@@ -83,13 +88,6 @@ $(window).on('load', function () {
     document.getElementById('basket').insertAdjacentHTML('afterbegin', tableBasket);
 });
 function timkiem(array, k) {
-    // array.forEach(function (element) {
-    //     if (element.id==k) {
-    //         return true;
-    //     }
-    // });
-
-    //     return false;
     for (var i of array) {
         if (i.id == k) {
             console.log(i.id);
